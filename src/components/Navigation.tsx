@@ -3,27 +3,24 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone, Mail, Globe } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("FR");
   const location = useLocation();
+  const { language, toggleLanguage, t } = useTranslation();
 
   const navItems = [
-    { label: "Accueil", href: "/" },
-    { label: "Services", href: "/services" },
-    { label: "À Propos", href: "/about" },
-    { label: "Galerie", href: "/gallery" },
-    { label: "Clients", href: "/clients" },
-    { label: "Contact", href: "/contact" },
+    { label: t('nav.home'), href: "/" },
+    { label: t('nav.services'), href: "/services" },
+    { label: t('nav.about'), href: "/about" },
+    { label: t('nav.gallery'), href: "/gallery" },
+    { label: t('nav.clients'), href: "/clients" },
+    { label: t('nav.contact'), href: "/contact" },
   ];
 
   const isActive = (href: string) => location.pathname === href;
-
-  const toggleLanguage = () => {
-    setLanguage(prev => prev === "FR" ? "EN" : "FR");
-  };
 
   return (
     <header className="bg-primary shadow-elegant sticky top-0 z-50">
@@ -82,7 +79,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Button variant="secondary" className="hover-lift">
-              Consultation Gratuite
+              {t('nav.consultation')}
             </Button>
           </nav>
 
@@ -110,7 +107,7 @@ const Navigation = () => {
                   </Link>
                 ))}
                 <Button className="mt-4 bg-gradient-secondary">
-                  Consultation Gratuite
+                  {t('nav.consultation')}
                 </Button>
               </div>
             </SheetContent>

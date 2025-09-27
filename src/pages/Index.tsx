@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from "@/hooks/useTranslation";
 import { 
   Calculator, 
   Scale, 
@@ -21,47 +22,48 @@ import heroImage from "@/assets/team-workstation.jpeg";
 import teamPhoto from "@/assets/team-photo.jpeg";
 
 const Index = () => {
+  const { t } = useTranslation();
   const services = [
     {
       id: "conseil-fiscal",
-      title: "Conseil Fiscal",
+      title: t('services.tax'),
       icon: Calculator,
-      description: "Expertise complète en fiscalité d'entreprise, actualité fiscale, appui TPS et régime réel, assistance contrôles fiscaux.",
+      description: t('services.tax.desc'),
       color: "bg-gradient-primary"
     },
     {
       id: "conseil-juridique", 
-      title: "Conseil Juridique",
+      title: t('services.tax'),
       icon: Scale,
-      description: "Audit juridique, création de sociétés, rédaction de contrats, consultations juridiques et sociales complètes.",
+      description: t('services.tax.desc'),
       color: "bg-gradient-secondary"
     },
     {
       id: "assistance-comptable",
-      title: "Assistance Comptable", 
+      title: t('services.accounting'), 
       icon: FileText,
-      description: "Mise en place comptabilité, progiciels spécialisés, gestion stocks, états financiers et synthèse.",
+      description: t('services.accounting.desc'),
       color: "bg-gradient-accent"
     },
     {
       id: "management",
-      title: "Management d'Entreprise",
+      title: t('services.management'),
       icon: TrendingUp, 
-      description: "Assistance GRH, formation et recrutement personnel, accompagnement créateurs d'entreprise.",
+      description: t('services.management.desc'),
       color: "bg-gradient-primary"
     },
     {
       id: "securisation-fonciere",
-      title: "Sécurisation Foncière",
+      title: t('services.security'),
       icon: ShieldCheck,
-      description: "Enquête et vérifications, formalités administratives et foncières pour acquisition, obtention des actes de présomption foncière, obtention des TF.",
+      description: t('services.security.desc'),
       color: "bg-gradient-secondary"
     },
     {
       id: "gestion-projets",
-      title: "Gestion des Projets", 
+      title: t('services.projects'), 
       icon: FolderOpen,
-      description: "Rédaction Business Plans, suivi projets de développement, études, conception, suivi et évaluation.",
+      description: t('services.projects.desc'),
       color: "bg-gradient-accent"
     }
   ];
@@ -104,35 +106,35 @@ const Index = () => {
         <div className="relative container mx-auto px-4 text-primary-foreground">
           <div className="max-w-4xl">
             <Badge className="mb-6 bg-gradient-accent text-accent-foreground text-lg px-4 py-2 animate-fade-in">
-              Bureau d'Études Professionnel
+              {t('hero.badge')}
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-              NDC CONSEILS
+              {t('hero.company')}
             </h1>
             <p className="text-2xl md:text-3xl font-semibold mb-4 animate-slide-up">
-              Assistance comptable - Conseils fiscal & juridique
+              {t('hero.subtitle')}
             </p>
-            <p className="text-xl md:text-2xl mb-8 animate-slide-up">
-              Management d'Entreprise - Gestion des projets - Formations - Recrutement
+            <p className="text-lg md:text-xl mb-8 italic text-accent animate-slide-up" style={{ animationDelay: "0.3s" }}>
+              {t('hero.tagline')}
             </p>
             <p className="text-lg md:text-xl mb-8 italic text-accent animate-slide-up" style={{ animationDelay: "0.3s" }}>
               "Être de loin, les professionnels les plus sûrs"
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-              <Link to="/contact">
+              <Link to="/services">
                 <Button size="lg" className="bg-gradient-secondary hover:shadow-glow text-lg px-8 py-4">
-                  Consultation Gratuite
+                  {t('hero.cta1')}
                 </Button>
               </Link>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4"
-                onClick={() => window.open(`https://wa.me/22997260188?text=Bonjour NDC CONSEILS, je souhaite obtenir des informations sur vos services`, '_blank')}
-              >
-                <Phone className="mr-2 h-5 w-5" />
-                +229 97 26 01 88
-              </Button>
+              <Link to="/contact">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4"
+                >
+                  {t('hero.cta2')}
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -142,9 +144,9 @@ const Index = () => {
       <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Nos Services</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('services.title')}</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              "Vous offrir de meilleurs services au meilleur prix" - Notre expertise au service de votre développement
+              {t('services.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
