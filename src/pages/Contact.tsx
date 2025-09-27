@@ -292,17 +292,17 @@ const Contact = () => {
           </div>
           <div className="max-w-4xl mx-auto">
             <Card className="overflow-hidden shadow-elegant">
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <p className="text-muted-foreground">
-                    Carte interactive disponible prochainement
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Lot 38S "A" Sèmè, Abomey-Calavi, Bénin
-                  </p>
-                </div>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2847684959873!2d2.35086171533252!3d6.4586304249686625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1024a943d92ce459%3A0xd4940a00696c2f33!2sNDC%20(New%20Deal%20Consulting%20Conseils)!5e0!3m2!1sfr!2sbj!4v1727436123456!5m2!1sfr!2sbj"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="NDC CONSEILS Location - Abomey-Calavi, Bénin"
+                className="w-full h-[450px]"
+              />
             </Card>
           </div>
         </div>
