@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone, Mail, Globe } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,15 +59,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center shadow-glow">
-              <span className="text-2xl font-bold text-accent-foreground">NDC</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-primary-foreground">
-                NDC CONSEILS
-              </h1>
-              <p className="text-sm text-primary-foreground/80">Bureau d'Études</p>
-            </div>
+            <img 
+              src={logo} 
+              alt="NDC CONSEILS Logo" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
