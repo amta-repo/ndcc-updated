@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Target, Heart, CheckCircle } from "lucide-react";
 import teamPhoto from "@/assets/team-photo.jpeg";
-import ceoPhoto from "@/assets/ceo-photo.jpeg";
+import ceoPhoto from "@/assets/CEO Mr Fiacre KEKE.jpeg";
 
 const About = () => {
   const values = [
@@ -145,21 +145,21 @@ const About = () => {
                   <div className="relative inline-block">
                     <img 
                       src={ceoPhoto} 
-                      alt="Mr. Fiacre KEKE - PDG NDC CONSEILS" 
+                      alt="Mr. Fiacre KEKE - Directeur Executif/CEO NDC CONSEILS" 
                       className="w-64 h-80 object-cover rounded-2xl shadow-elegant mx-auto lg:mx-0"
                     />
                     <Badge className="absolute -top-2 -right-2 bg-gradient-accent text-accent-foreground">
-                      PDG
+                      CEO
                     </Badge>
                   </div>
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-2">Mr. Fiacre KEKE</h3>
                   <p className="text-lg text-secondary font-semibold mb-4">
-                    Président Directeur Général
+                    Directeur Executif/CEO
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    Juriste-fiscaliste Expert en Droit Privé, Mr. Fiacre KEKE dirige NDC CONSEILS 
+                    Notre Expert Juriste-fiscaliste, Mr. Fiacre KEKE dirige NDC CONSEILS 
                     avec une vision claire : offrir des services de conseil de qualité supérieure 
                     aux entreprises béninoises. Fort de son expertise en droit des affaires et 
                     en fiscalité, il guide l'équipe vers l'excellence opérationnelle.

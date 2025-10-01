@@ -117,9 +117,6 @@ const Index = () => {
             <p className="text-lg md:text-xl mb-8 italic text-accent animate-slide-up" style={{ animationDelay: "0.3s" }}>
               {t('hero.tagline')}
             </p>
-            <p className="text-lg md:text-xl mb-8 italic text-accent animate-slide-up" style={{ animationDelay: "0.3s" }}>
-              "Être de loin, les professionnels les plus sûrs"
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.5s" }}>
               <Link to="/services">
                 <Button size="lg" className="bg-gradient-secondary hover:shadow-glow text-lg px-8 py-4">
@@ -130,7 +127,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4"
+                  className="border-white text-black hover:bg-white hover:text-primary text-lg px-8 py-4"
                 >
                   {t('hero.cta2')}
                 </Button>

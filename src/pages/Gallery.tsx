@@ -36,7 +36,7 @@ const Gallery = () => {
       src: galleryImage1,
       alt: "Formation professionnelle",
       category: "Formations",
-      title: "Sessions de Formation",
+      title: "Activite de la Fin d'Anee",
       description: "Formations professionnelles pour nos clients"
     },
     {

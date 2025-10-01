@@ -58,13 +58,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Téléphone",
-      details: ["+229 97 26 01 88", "+229 97 70 60"],
+      details: ["+229 01 97 26 01 88"],
       color: "bg-gradient-primary"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["contact@ndcconseils.bj", "info@ndcconseils.bj"],
+      details: ["ndcconseils.contact@gmail.com"],
       color: "bg-gradient-secondary"
     },
     {

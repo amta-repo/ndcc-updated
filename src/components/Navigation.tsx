@@ -35,7 +35,7 @@ const Navigation = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>contact@ndcconseils.bj</span>
+                <span>ndcconseils.contact@ndcconseils.bj</span>
               </div>
             </div>
             <Button

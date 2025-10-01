@@ -108,12 +108,11 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-accent" />
                 <div>
                   <p className="text-primary-foreground/80">+229 97 26 01 88</p>
-                  <p className="text-primary-foreground/80">+229 97 70 60</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <p className="text-primary-foreground/80">contact@ndcconseils.bj</p>
+                <p className="text-primary-foreground/80">ndcconseils.contact@ndcconseils.bj</p>
               </div>
             </div>
           </div>
