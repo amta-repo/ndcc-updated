@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,14 +27,15 @@ const Footer = () => {
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-accent rounded-full flex items-center justify-center">
-                <span className="text-lg font-bold text-accent-foreground">NDC</span>
+              <div className="w-10 h-10 bg-gradient-accent flex items-center justify-center">
+                  <img src={logo} alt="NDC CONSEILS LOGO" />
               </div>
               <div>
-                <h3 className="text-lg font-bold">NDC CONSEILS</h3>
+                {/* <h3 className="text-lg font-bold">NDC CONSEILS</h3> */}
                 <p className="text-sm text-primary-foreground/80">Bureau d'Études</p>
               </div>
             </div>
@@ -112,7 +114,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <p className="text-primary-foreground/80">ndcconseils.contact@ndcconseils.bj</p>
+                <p className="text-primary-foreground/80">ndcconseils.contact@gmail.com</p>
               </div>
             </div>
           </div>

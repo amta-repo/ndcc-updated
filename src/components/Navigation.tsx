@@ -20,7 +20,7 @@ const Navigation = () => {
     { label: t('nav.contact'), href: "/contact" },
   ];
 
-  const isActive = (href: string) => location.pathname === href;
+  const isActive = (href: string) => location.contact === href;
 
   return (
     <header className="bg-primary shadow-elegant sticky top-0 z-50">
@@ -35,7 +35,7 @@ const Navigation = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>ndcconseils.contact@ndcconseils.bj</span>
+                <span>ndcconseils.contact@gmail.com</span>
               </div>
             </div>
             <Button
@@ -78,9 +78,11 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
+            <a href="https://wa.me/22997260188" target="_blank" rel="noopener noreferrer">
             <Button variant="secondary" className="hover-lift">
               {t('nav.consultation')}
             </Button>
+            </a>
           </nav>
 
           {/* Mobile Navigation */}
