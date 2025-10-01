@@ -108,7 +108,7 @@ const Index = () => {
             <Badge className="mb-6 bg-gradient-accent text-accent-foreground text-lg px-4 py-2 animate-fade-in">
               {t('hero.badge')}
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in text-shadow-lg">
               {t('hero.company')}
             </h1>
             <p className="text-2xl md:text-3xl font-semibold mb-4 animate-slide-up">

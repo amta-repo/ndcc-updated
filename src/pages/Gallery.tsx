@@ -26,10 +26,10 @@ const Gallery = () => {
     {
       id: 2,
       src: ceoPhoto,
-      alt: "PDG Mr. Fiacre KEKE",
+      alt: "Directeur Executif Mr. Fiacre KEKE",
       category: "Équipe",
-      title: "Direction Générale",
-      description: "Mr. Fiacre KEKE, Président Directeur Général"
+      title: "Directeur Executif",
+      description: "Mr. Fiacre KEKE, Juriste Fiscaliste"
     },
     {
       id: 3,
