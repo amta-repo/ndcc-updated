@@ -187,9 +187,11 @@ const About = () => {
             Faites confiance à notre expertise pour accompagner votre entreprise 
             vers le succès et la croissance durable.
           </p>
-          <Button size="lg" variant="secondary" className="hover-lift bg-white text-secondary hover:bg-white/90">
-            Demander une Consultation
-          </Button>
+          <a href="/contact" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="secondary" className="hover-lift bg-white text-secondary hover:bg-white/90">
+              Demander une Consultation
+            </Button>
+          </a>
         </div>
       </section>
     </div>

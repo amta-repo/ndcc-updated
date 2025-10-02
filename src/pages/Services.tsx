@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+// import { brochure } from "@/assets/docs/brochure.docx";
 import { 
   Calculator, 
   Scale, 
@@ -137,9 +138,10 @@ const Services = () => {
                 Consultation Gratuite
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="hover-lift">
-              Télécharger Notre Brochure
-            </Button>
+              <Button size="lg" variant="outline" className="hover-lift">
+                Télécharger Notre Brochure
+              </Button>
+            
           </div>
         </div>
       </section>

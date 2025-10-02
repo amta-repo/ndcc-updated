@@ -22,29 +22,26 @@ const ServiceDetail = () => {
     "conseil-fiscal": {
       title: "Conseil Fiscal",
       icon: Calculator,
-      description: "Expertise complète en fiscalité d'entreprise et optimisation fiscale",
+      description: "Expertise complète en fiscalité de l'entreprise en ligne ou physique",
       color: "bg-gradient-primary",
-      overview: "Notre service de conseil fiscal vous accompagne dans la gestion optimale de vos obligations fiscales. Nous vous aidons à naviguer dans la complexité de la législation fiscale béninoise tout en optimisant votre charge fiscale.",
+      overview: "Vous avez uniquement besoin de réponses simples à des questions ponctuelles ?",
       features: [
         "Actualité fiscale dans son ensemble",
         "Appui-conseil et assistance pour les entreprises du régime TPS",
         "Appui-conseil et assistance pour les entreprises du régime réel",
         "Appui-conseil et assistance pour la gestion des crédits MP",
         "Assistance lors des contrôles fiscaux",
-        "Veille fiscale quotidienne",
-        "Optimisation de la charge fiscale",
-        "Déclarations fiscales et sociales"
+        "Veille fiscale quotidienne"
       ],
       benefits: [
         "Réduction des risques fiscaux",
-        "Optimisation légale de vos impôts",
         "Mise en conformité garantie",
         "Veille réglementaire continue",
         "Assistance en cas de contrôle"
       ],
       process: [
         "Audit fiscal initial de votre entreprise",
-        "Identification des optimisations possibles",
+        "Identification des défis possibles",
         "Mise en place des procédures adaptées",
         "Suivi et accompagnement continu"
       ]
@@ -54,16 +51,14 @@ const ServiceDetail = () => {
       icon: Scale,
       description: "Accompagnement juridique complet pour sécuriser vos activités",
       color: "bg-gradient-secondary",
-      overview: "Notre équipe d'experts juridiques vous accompagne dans tous les aspects légaux de votre activité, de la création d'entreprise à la gestion des contrats complexes.",
+      overview: "Notre équipe d'experts juridiques vous accompagne dans tous les aspects légaux de votre activité.",
       features: [
-        "Audit juridique complet",
+        "Audit juridique",
         "Formalités de création de toutes sortes de société",
-        "Mise en place des registres légaux",
-        "Conseils d'administration et AG",
-        "Registre des mouvements des titres",
-        "Rédaction et enregistrement des contrats",
-        "Consultations juridiques et sociales",
-        "Droit du travail et relations sociales"
+        "Mise en place des registres légaux (conseils d'administration et AG,Registre des mouvements des titres et c.)",
+        "Rédaction et enregistrement des contrats de tout genre",
+        "Consultations juridiques et sociales (de tout genre).",
+        "Appui-conseil et assistance pour la sécurisation foncière (présomption foncière /Titre Foncier)"
       ],
       benefits: [
         "Sécurisation juridique de vos activités",
@@ -87,12 +82,10 @@ const ServiceDetail = () => {
       overview: "Nous vous aidons dans la mise en place d'une comptabilité créative et efficace, adaptée à la taille et aux spécificités de votre entreprise.",
       features: [
         "Mise en place des livres légaux comptables",
-        "Appui en gestion comptable quotidienne",
+        "Appui en gestion comptable quotidienne aux MPE et Moyennes Entreprises (ME)",
         "Installation et paramétrage de progiciel de comptabilité",
         "Gestion et suivi des stocks et marchandises",
-        "Progiciel de gestion commerciale",
-        "Facturation et gestion de stock",
-        "Édition des états de synthèse",
+        "Installation et paramétrage de progiciel de gestion commerciale (facturation, gestion de stock, édition des états de synthèse…)",
         "Élaboration des états financiers"
       ],
       benefits: [
@@ -118,12 +111,7 @@ const ServiceDetail = () => {
       features: [
         "Assistance dans la GRH",
         "Formation et recrutement du personnel",
-        "Formation des futurs créateurs d'entreprise",
-        "Optimisation des processus internes",
-        "Développement des compétences",
-        "Audit organisationnel",
-        "Restructuration d'entreprise",
-        "Accompagnement au changement"
+        "Formation des futurs créateurs d'entreprise"
       ],
       benefits: [
         "Amélioration de la performance",
@@ -149,11 +137,7 @@ const ServiceDetail = () => {
         "Enquête et vérifications préalables",
         "Formalités administratives et foncières pour acquisition",
         "Obtention des actes de présomption foncière",
-        "Obtention des Titres Fonciers (TF)",
-        "Vérification de la propriété",
-        "Négociation des contrats",
-        "Suivi des procédures administratives",
-        "Conseil en investissement immobilier"
+        "Obtention des Titres Fonciers (TF)"
       ],
       benefits: [
         "Sécurité juridique maximale",
@@ -180,10 +164,7 @@ const ServiceDetail = () => {
         "Rédaction et suivi des projets de développement",
         "Études de faisabilité",
         "Conception de projets",
-        "Suivi et évaluation de projets",
-        "Recherche de financement",
-        "Accompagnement des entrepreneurs",
-        "Gestion des risques projets"
+        "Suivi et évaluation de projets de société et mission"
       ],
       benefits: [
         "Projets structurés et viables",
@@ -195,7 +176,6 @@ const ServiceDetail = () => {
       process: [
         "Analyse de votre idée/projet",
         "Élaboration du business plan",
-        "Recherche de financements",
         "Accompagnement dans la mise en œuvre"
       ]
     }
