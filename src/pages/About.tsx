@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Target, Heart, CheckCircle } from "lucide-react";
-import teamPhoto from "@/assets/team-photo.jpeg";
+import teamPhoto from "@/assets/Équipe  NDCC - Copy1.jpeg";
 import ceoPhoto from "@/assets/CEO Mr Fiacre KEKE.jpeg";
 
 const About = () => {

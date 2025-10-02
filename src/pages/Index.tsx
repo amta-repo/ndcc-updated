@@ -19,7 +19,7 @@ import {
   Mail
 } from "lucide-react";
 import heroImage from "@/assets/team-workstation.jpeg";
-import teamPhoto from "@/assets/team-photo.jpeg";
+import teamPhoto from "@/assets/Équipe  NDCC - Copy1.jpeg";
 
 const Index = () => {
   const { t } = useTranslation();
