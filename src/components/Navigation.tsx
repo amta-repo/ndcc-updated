@@ -20,7 +20,7 @@ const Navigation = () => {
     { label: t('nav.contact'), href: "/contact" },
   ];
 
-  const isActive = (href: string) => location.contact === href;
+  const isActive = (href: string) => location.pathname === href;
 
   return (
     <header className="bg-primary shadow-elegant sticky top-0 z-50">
@@ -30,12 +30,15 @@ const Navigation = () => {
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <span>+229 97 26 01 88</span>
+                <a href="tel:+22997260188">
+                  <Phone className="h-4 w-4" />
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>ndcconseils.contact@gmail.com</span>
+                <a href="mailto:ndcconseils.contact@gmail.com">
+                  <span>ndcconseils.contact@gmail.com</span>
+                </a>
               </div>
             </div>
             <Button

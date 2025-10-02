@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
@@ -44,18 +45,26 @@ const Footer = () => {
               et le management d'entreprise au Bénin.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
-                <Facebook className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
-                <Linkedin className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
-                <Twitter className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
-                <Instagram className="h-5 w-5" />
-              </Button>
+              <a href="https://facebook.com/ndcconseils" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
+                  <FaFacebookF className="h-5 w-5" />
+                </Button>
+              </a>
+              <a href="https://linkedin.com/company/ndcconseils" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
+                  <FaLinkedinIn className="h-5 w-5" />
+                </Button>
+              </a>
+              <a href="https://x.com/ndcconseils" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
+                  <FaTwitter className="h-5 w-5" />
+                </Button>
+              </a>
+              <a href="https://www.instagram.com/ndcconseils" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
+                  <FaInstagram className="h-5 w-5" />
+                </Button>
+              </a>
             </div>
           </div>
 
