@@ -39,7 +39,7 @@ const Clients = () => {
   ];
 
   const corporateClients = [
-    { name: "WTHP", category: "Produits Pétrolier" },
+    { name: "WTHP", category: "Produits Pétrolier - Hydrocarbures" },
     { name: "Ivatis", category: "Technologie" },
     { name: "JKA Petroleum", category: "Énergie Hydrocarbures" },
     { name: "Sale Side", category: "Commerce" },

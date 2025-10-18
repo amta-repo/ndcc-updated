@@ -58,7 +58,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Téléphone",
-      details: ["+229 01 97 26 01 88"],
+      details: ["+229 01 97 70 60 69"],
       color: "bg-gradient-primary"
     },
     {
