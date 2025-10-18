@@ -17,9 +17,9 @@ const Clients = () => {
   const mainClients = [
     {
       name: "Ste Wissam",
-      category: "Entreprise",
+      category: "Commerce Genérale - Import/Export",
       icon: Building2,
-      description: "Société de services et conseil",
+      description: "Commerce Generale - Import/Export",
       color: "bg-gradient-primary"
     },
     {
@@ -39,22 +39,22 @@ const Clients = () => {
   ];
 
   const corporateClients = [
-    { name: "WTHP", category: "Services" },
+    { name: "WTHP", category: "Produits Pétrolier" },
     { name: "Ivatis", category: "Technologie" },
-    { name: "JKA Petroleum", category: "Énergie" },
+    { name: "JKA Petroleum", category: "Énergie Hydrocarbures" },
     { name: "Sale Side", category: "Commerce" },
     { name: "BTS", category: "Services Techniques" },
-    { name: "Bautec", category: "Construction" },
+    { name: "Bautec", category: "Tout de Froids et les Ingine" },
     { name: "Brotherhood Services", category: "Services" },
     { name: "Brotherhood Immo", category: "Immobilier" }
   ];
 
   const educationalClients = [
-    { name: "KIAZ Afrika", category: "Formation Professionnelle" },
-    { name: "Katoo", category: "Éducation" },
+    { name: "KIAZ Afrika", category: "Centre de Formation" },
+    { name: "Katoo", category: "Centre de Formation" },
     { name: "CFFP Avé", category: "Centre de Formation" },
-    { name: "CSP Ste Mireille", category: "Formation Spécialisée" },
-    { name: "CSP les 3 clés", category: "Centre de Perfectionnement" }
+    { name: "CSP Ste Mireille", category: "École" },
+    { name: "CSP les 3 clés", category: "École" }
   ];
 
   const otherClients = [

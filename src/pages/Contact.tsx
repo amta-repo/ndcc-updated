@@ -76,12 +76,12 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Horaires",
-      details: ["Lun - Ven: 8h00 - 18h00", "Sam: 9h00 - 13h00"],
+      details: ["Lun - Ven: 8h00 - 19h00", "Sam: Sur RDV"],
       color: "bg-gradient-primary"
     }
   ];
 
-  const whatsappNumber = "+22997260188";
+  const whatsappNumber = "+22997706069";
   const whatsappMessage = encodeURIComponent("Bonjour NDC CONSEILS, j'aimerais obtenir des informations sur vos services.");
 
   return (
