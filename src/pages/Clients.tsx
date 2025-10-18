@@ -12,6 +12,7 @@ import {
   Users,
   TrendingUp
 } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Clients = () => {
   const mainClients = [
@@ -78,10 +79,10 @@ const Clients = () => {
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Nos Clients
+            {useTranslation().t('clients.title')}
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">
-            Des partenaires de confiance qui nous font honneur
+            {useTranslation().t('clients.subtitle')}
           </p>
         </div>
       </section>
@@ -117,10 +118,10 @@ const Clients = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Nos Partenaires
+              {useTranslation().t('clients.partners.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Découvrez quelques-uns des clients qui nous font confiance pour leur développement
+              {useTranslation().t('clients.partners.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -244,21 +245,20 @@ const Clients = () => {
       <section className="bg-gradient-secondary text-secondary-foreground py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Rejoignez Nos Clients Satisfaits
+            {useTranslation().t('about.join.cta')}
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Faites partie des entreprises qui font confiance à NDC CONSEILS 
-            pour leur croissance et leur succès.
+            {useTranslation().t('about.mission.text')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" variant="secondary" className="bg-white text-secondary hover:bg-white/90 hover-lift">
-                Devenir Client
+                <Button size="lg" variant="secondary" className="bg-white text-secondary hover:bg-white/90 hover-lift">
+                {useTranslation().t('clients.cta.join')}
               </Button>
             </Link>
             <Link to="/services">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Découvrir Nos Services
+                {useTranslation().t('clients.cta.discover')}
               </Button>
             </Link>
           </div>

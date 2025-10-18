@@ -81,7 +81,7 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
-            <a href="https://wa.me/22997260188" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/22997706069" target="_blank" rel="noopener noreferrer">
             <Button variant="secondary" className="hover-lift">
               {t('nav.consultation')}
             </Button>

@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { X, ZoomIn } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import galleryImage1 from "@/assets/gallery-1.jpeg";
 import galleryImage2 from "@/assets/gallery-2.jpeg";
@@ -10,9 +11,17 @@ import teamPhoto from "@/assets/team-photo.jpeg";
 import ceoPhoto from "@/assets/ceo-photo.jpeg";
 
 const Gallery = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Tous");
+  const { t } = useTranslation();
 
-  const categories = ["Tous", "Équipe", "Formations", "Événements", "Bureau"];
+  const [selectedCategory, setSelectedCategory] = useState(t('gallery.categories.all'));
+
+  const categories = [
+    t('gallery.categories.all'),
+    t('gallery.categories.team'),
+    t('gallery.categories.trainings'),
+    t('gallery.categories.events'),
+    t('gallery.categories.office')
+  ];
 
   const galleryItems = [
     {
@@ -75,10 +84,10 @@ const Gallery = () => {
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Galerie Photos
+            {t('gallery.title')}
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">
-            Découvrez NDC CONSEILS en images : notre équipe, nos formations et nos événements
+            {t('gallery.subtitle')}
           </p>
         </div>
       </section>
@@ -123,9 +132,9 @@ const Gallery = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-4 left-4 right-4">
-                      <Badge className="mb-2 bg-gradient-accent text-accent-foreground">
-                        {item.category}
-                      </Badge>
+                            <Badge className="mb-2 bg-gradient-accent text-accent-foreground">
+                              {item.category}
+                            </Badge>
                       <h3 className="text-white font-semibold text-lg mb-1">
                         {item.title}
                       </h3>
@@ -188,19 +197,19 @@ const Gallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="animate-fade-in">
               <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-secondary-foreground/80">Clients Accompagnés</div>
+              <div className="text-secondary-foreground/80">{t('gallery.stats.clients')}</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <div className="text-4xl font-bold mb-2">100+</div>
-              <div className="text-secondary-foreground/80">Formations Dispensées</div>
+              <div className="text-secondary-foreground/80">{t('gallery.stats.trainings')}</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <div className="text-4xl font-bold mb-2">10+</div>
-              <div className="text-secondary-foreground/80">Années d'Expérience</div>
+              <div className="text-secondary-foreground/80">{t('gallery.stats.years')}</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <div className="text-4xl font-bold mb-2">24/7</div>
-              <div className="text-secondary-foreground/80">Support Client</div>
+              <div className="text-secondary-foreground/80">{t('gallery.stats.support')}</div>
             </div>
           </div>
         </div>
