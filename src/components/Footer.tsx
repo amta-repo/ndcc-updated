@@ -45,7 +45,7 @@ const Footer = () => {
               et le management d'entreprise au Bénin.
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com/ndcconseils" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/people/New-Deal-Consulting-Conseils/100054363888577/" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
                   <FaFacebookF className="h-5 w-5" />
                 </Button>
