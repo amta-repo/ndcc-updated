@@ -2,26 +2,28 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "@/hooks/useTranslation";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { label: "Accueil", href: "/" },
-    { label: "Services", href: "/services" },
-    { label: "À Propos", href: "/about" },
-    { label: "Galerie", href: "/gallery" },
-    { label: "Contact", href: "/contact" },
+    { label: t('nav.home'), href: "/" },
+    { label: t('nav.services'), href: "/services" },
+    { label: t('nav.about'), href: "/about" },
+    { label: t('nav.gallery'), href: "/gallery" },
+    { label: t('nav.contact'), href: "/contact" },
   ];
 
   const services = [
-    { label: "Conseil Fiscal", href: "/services/conseil-fiscal" },
-    { label: "Conseil Juridique", href: "/services/conseil-juridique" },
-    { label: "Assistance Comptable", href: "/services/assistance-comptable" },
-    { label: "Management d'Entreprise", href: "/services/management" },
-    { label: "Sécurisation Foncière", href: "/services/securisation-fonciere" },
-    { label: "Gestion des Projets", href: "/services/gestion-projets" },
+    { label: t('services.tax.title'), href: "/services/conseil-fiscal" },
+    { label: t('services.legal.title'), href: "/services/conseil-juridique" },
+    { label: t('services.accounting.title'), href: "/services/assistance-comptable" },
+    { label: t('services.management.title'), href: "/services/management" },
+    { label: t('services.security.title'), href: "/services/securisation-fonciere" },
+    { label: t('services.projects.title'), href: "/services/gestion-projets" },
   ];
 
   return (
