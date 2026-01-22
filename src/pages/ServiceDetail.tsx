@@ -18,6 +18,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 
 const ServiceDetail = () => {
   const { serviceId } = useParams();
+  const { t } = useTranslation();
 
   const services = {
     "conseil-fiscal": {
@@ -199,7 +200,7 @@ const ServiceDetail = () => {
           className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors"
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
-          {useTranslation().t('services.title')}
+          {t('services.title')}
         </Link>
       </div>
 
@@ -229,7 +230,7 @@ const ServiceDetail = () => {
               <CardHeader>
                 <CardTitle className="flex items-center text-2xl">
                   <IconComponent className="h-6 w-6 mr-3 text-primary" />
-                  {useTranslation().t('service.overview') || 'Vue d\'Ensemble'}
+                  {t('service.overview')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -242,7 +243,7 @@ const ServiceDetail = () => {
             {/* Features */}
             <Card className="shadow-card">
               <CardHeader>
-                <CardTitle>{useTranslation().t('service.includes') || 'Nos Services Inclus'}</CardTitle>
+                <CardTitle>{t('service.includes')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -259,7 +260,7 @@ const ServiceDetail = () => {
             {/* Process */}
             <Card className="shadow-card">
               <CardHeader>
-                <CardTitle>{useTranslation().t('service.process.title') || 'Notre Processus'}</CardTitle>
+                <CardTitle>{t('service.process.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-6">
@@ -283,7 +284,7 @@ const ServiceDetail = () => {
             {/* Benefits */}
             <Card className="shadow-card">
               <CardHeader>
-                <CardTitle>{useTranslation().t('service.benefits.title') || 'Avantages Clés'}</CardTitle>
+                <CardTitle>{t('service.benefits.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
@@ -300,11 +301,11 @@ const ServiceDetail = () => {
             {/* Contact Card */}
             <Card className={`${service.color} text-primary-foreground shadow-elegant`}>
               <CardHeader>
-                <CardTitle className="text-white">{useTranslation().t('service.interested') || 'Intéressé par ce service ?'}</CardTitle>
+                <CardTitle className="text-white">{t('service.interested')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-white/90 mb-6">
-                  {useTranslation().t('service.contact.prompt') || 'Contactez nos experts pour une consultation personnalisée et un devis gratuit.'}
+                  {t('service.contact.prompt')}
                 </p>
                 <div className="space-y-4">
                   <Button 
@@ -312,12 +313,12 @@ const ServiceDetail = () => {
                     onClick={() => window.open(`https://wa.me/22997260188?text=Bonjour, je suis intéressé par votre service: ${service.title}`, '_blank')}
                   >
                     <Phone className="h-4 w-4 mr-2" />
-                    {useTranslation().t('service.contact.call') || 'Appeler Maintenant'}
+                    {t('service.contact.call')}
                   </Button>
                   <Link to="/contact">
                     <Button variant="outline" className="w-full bg-transparent border-white text-white hover:bg-white hover:text-primary">
                       <Mail className="h-4 w-4 mr-2" />
-                      {useTranslation().t('service.contact.request') || 'Demander un Devis'}
+                      {t('service.contact.request')}
                     </Button>
                   </Link>
                 </div>

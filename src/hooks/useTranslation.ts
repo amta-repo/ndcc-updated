@@ -60,6 +60,16 @@ export const translations: Record<Language, Record<string, any>> = {
     'services.projects.title': 'Gestion de Projets',
     'services.projects.desc': 'Pilotage de projets, études de faisabilité et suivi de réalisation.',
 
+    // Service Detail
+    'service.overview': "Vue d'Ensemble",
+    'service.includes': 'Nos Services Inclus',
+    'service.process.title': 'Notre Processus',
+    'service.benefits.title': 'Avantages Clés',
+    'service.interested': 'Intéressé par ce service ?',
+    'service.contact.prompt': 'Contactez nos experts pour une consultation personnalisée et un devis gratuit.',
+    'service.contact.call': 'Appeler Maintenant',
+    'service.contact.request': 'Demander un Devis',
+
     // About
     'about.title': 'À Propos de NDC CONSEILS',
     'about.tagline': '"Être de loin, les professionnels les plus sûrs"',
@@ -158,6 +168,16 @@ export const translations: Record<Language, Record<string, any>> = {
     'services.security.desc': 'Support in land procedures and securing your assets.',
     'services.projects.title': 'Project Management',
     'services.projects.desc': 'Project management, feasibility studies and implementation monitoring.',
+
+    // Service Detail
+    'service.overview': 'Overview',
+    'service.includes': "What's included",
+    'service.process.title': 'Our process',
+    'service.benefits.title': 'Key benefits',
+    'service.interested': 'Interested in this service?',
+    'service.contact.prompt': 'Contact our experts for a personalized consultation and a free quote.',
+    'service.contact.call': 'Call now',
+    'service.contact.request': 'Request a quote',
 
     // About
     'about.title': 'About NDC CONSEILS',
