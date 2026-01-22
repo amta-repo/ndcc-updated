@@ -46,6 +46,20 @@ export const translations: Record<Language, Record<string, any>> = {
     'services.cta.primary': 'Consultation Gratuite',
     'services.cta.brochure': 'Télécharger Notre Brochure',
 
+    // Service Items
+    'services.tax.title': 'Conseil Fiscal',
+    'services.tax.desc': 'Optimisation fiscale, déclarations et accompagnement lors des contrôles fiscaux.',
+    'services.legal.title': 'Conseil Juridique',
+    'services.legal.desc': 'Rédaction de contrats, conseils en droit des affaires et accompagnement juridique.',
+    'services.accounting.title': 'Assistance Comptable',
+    'services.accounting.desc': 'Tenue comptable, états financiers et conseil en gestion financière.',
+    'services.management.title': 'Management d\'Entreprise',
+    'services.management.desc': 'Stratégie d\'entreprise, organisation et accompagnement au développement.',
+    'services.security.title': 'Sécurisation Foncière',
+    'services.security.desc': 'Accompagnement dans les procédures foncières et sécurisation de vos biens.',
+    'services.projects.title': 'Gestion de Projets',
+    'services.projects.desc': 'Pilotage de projets, études de faisabilité et suivi de réalisation.',
+
     // About
     'about.title': 'À Propos de NDC CONSEILS',
     'about.tagline': '"Être de loin, les professionnels les plus sûrs"',
@@ -130,6 +144,20 @@ export const translations: Record<Language, Record<string, any>> = {
     'services.hero.subtitle': 'Comprehensive expertise to support your growth',
     'services.cta.primary': 'Free Consultation',
     'services.cta.brochure': 'Download Our Brochure',
+
+    // Service Items
+    'services.tax.title': 'Tax Advisory',
+    'services.tax.desc': 'Tax optimization, declarations and support during tax audits.',
+    'services.legal.title': 'Legal Advisory',
+    'services.legal.desc': 'Contract drafting, business law advice and legal support.',
+    'services.accounting.title': 'Accounting Assistance',
+    'services.accounting.desc': 'Bookkeeping, financial statements and financial management advice.',
+    'services.management.title': 'Business Management',
+    'services.management.desc': 'Business strategy, organization and development support.',
+    'services.security.title': 'Land Security',
+    'services.security.desc': 'Support in land procedures and securing your assets.',
+    'services.projects.title': 'Project Management',
+    'services.projects.desc': 'Project management, feasibility studies and implementation monitoring.',
 
     // About
     'about.title': 'About NDC CONSEILS',

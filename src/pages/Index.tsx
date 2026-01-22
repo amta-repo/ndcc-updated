@@ -26,42 +26,42 @@ const Index = () => {
   const services = [
     {
       id: "conseil-fiscal",
-      title: t('services.tax'),
+      title: t('services.tax.title'),
       icon: Calculator,
       description: t('services.tax.desc'),
       color: "bg-gradient-primary"
     },
     {
       id: "conseil-juridique", 
-      title: t('services.tax'),
+      title: t('services.legal.title'),
       icon: Scale,
-      description: t('services.tax.desc'),
+      description: t('services.legal.desc'),
       color: "bg-gradient-secondary"
     },
     {
       id: "assistance-comptable",
-      title: t('services.accounting'), 
+      title: t('services.accounting.title'), 
       icon: FileText,
       description: t('services.accounting.desc'),
       color: "bg-gradient-accent"
     },
     {
       id: "management",
-      title: t('services.management'),
+      title: t('services.management.title'),
       icon: TrendingUp, 
       description: t('services.management.desc'),
       color: "bg-gradient-primary"
     },
     {
       id: "securisation-fonciere",
-      title: t('services.security'),
+      title: t('services.security.title'),
       icon: ShieldCheck,
       description: t('services.security.desc'),
       color: "bg-gradient-secondary"
     },
     {
       id: "gestion-projets",
-      title: t('services.projects'), 
+      title: t('services.projects.title'), 
       icon: FolderOpen,
       description: t('services.projects.desc'),
       color: "bg-gradient-accent"
