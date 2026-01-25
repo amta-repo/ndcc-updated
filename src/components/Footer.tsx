@@ -24,6 +24,7 @@ const Footer = () => {
     { label: t('services.management.title'), href: "/services/management" },
     { label: t('services.security.title'), href: "/services/securisation-fonciere" },
     { label: t('services.projects.title'), href: "/services/gestion-projets" },
+    { label: t('services.study.title'), href: "/services/etude-dossier" },
   ];
 
   return (
@@ -43,8 +44,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Votre partenaire de confiance pour l'expertise comptable, fiscale, juridique 
-              et le management d'entreprise au Bénin.
+              Votre partenaire de confiance pour les mission d'appui conseil, 
+              d'audit-fiscale, juridique et comptable.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/people/New-Deal-Consulting-Conseils/100054363888577/" target="_blank" rel="noopener noreferrer">
