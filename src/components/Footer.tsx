@@ -92,7 +92,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Nos Services</h4>
             <ul className="space-y-2">
-              {services.slice(0, 6).map((service) => (
+              {services.map((service) => (
                 <li key={service.href}>
                   <Link
                     to={service.href}

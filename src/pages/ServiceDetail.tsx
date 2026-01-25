@@ -134,7 +134,7 @@ const ServiceDetail = () => {
       icon: ShieldCheck,
       description: "Sécurisation complète de vos biens fonciers et immobiliers",
       color: "bg-gradient-secondary",
-      overview: "Notre service de sécurisation foncière vous accompagne dans tous les aspects juridiques et administratifs de l'acquisition et la sécurisation de vos biens immobiliers.",
+      overview: "Accompagnement, Montage de dossier et suivi pour la réalisation des ouvrages de type modernes et innovante.",
       features: [
         "Enquête et vérifications préalables",
         "Formalités administratives et foncières pour acquisition",

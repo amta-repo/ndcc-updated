@@ -61,6 +61,14 @@ const Services = () => {
       description: "Accompagnement complet dans la réalisation de vos projets.",
       details: "Rédaction de Business Plans, suivi de projets de développement, études, conception, suivi et évaluation de projets.",
       color: "bg-gradient-accent"
+    },
+    {
+      id: "etude-dossier",
+      title: "Mission d'Étude de Dossier",
+      icon: FileText,
+      description: "Analyse approfondie et suivi évaluation de vos dossiers.",
+      details: "Étude de dossiers, suivi et évaluation de projets, analyse documentaire et accompagnement personnalisé.",
+      color: "bg-gradient-primary"
     }
   ];
 
