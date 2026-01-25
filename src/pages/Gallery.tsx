@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { X, ZoomIn } from "lucide-react";
+import { ZoomIn, Download } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import galleryImage1 from "@/assets/gallery-1.jpeg";
@@ -51,10 +51,11 @@ const Gallery = () => {
     {
       id: 4,
       src: galleryImage2,
-      alt: "Événement fiscal",
-      category: "Événements",
-      title: "Formation Fiscale 2022",
-      description: "Formation sur les innovations fiscales du CGI 2022"
+      alt: "Formation professionnelle",
+      category: "Formations",
+      title: "Formation",
+      description: "Nos programmes de formation professionnelle",
+      downloadLink: "/docs/brochure.pdf"
     },
     {
       id: 5,
@@ -178,9 +179,22 @@ const Gallery = () => {
                   <Badge variant="secondary" className="mb-3">
                     {item.category}
                   </Badge>
-                  <h3 className="font-semibold text-lg mb-2">
-                    {item.title}
-                  </h3>
+                  {item.downloadLink ? (
+                    <a 
+                      href={item.downloadLink} 
+                      download 
+                      className="block group/link"
+                    >
+                      <h3 className="font-semibold text-lg mb-2 text-primary hover:underline flex items-center gap-2">
+                        {item.title}
+                        <Download className="h-4 w-4" />
+                      </h3>
+                    </a>
+                  ) : (
+                    <h3 className="font-semibold text-lg mb-2">
+                      {item.title}
+                    </h3>
+                  )}
                   <p className="text-muted-foreground">
                     {item.description}
                   </p>

@@ -59,6 +59,8 @@ export const translations: Record<Language, Record<string, any>> = {
     'services.security.desc': 'Accompagnement dans les procédures foncières et sécurisation de vos biens.',
     'services.projects.title': 'Gestion de Projets',
     'services.projects.desc': 'Pilotage de projets, études de faisabilité et suivi de réalisation.',
+    'services.study.title': "Mission d'Étude de Dossier",
+    'services.study.desc': "Analyse de dossiers, suivi et évaluation de projets avec expertise.",
 
     // Service Detail
     'service.overview': "Vue d'Ensemble",
@@ -168,6 +170,8 @@ export const translations: Record<Language, Record<string, any>> = {
     'services.security.desc': 'Support in land procedures and securing your assets.',
     'services.projects.title': 'Project Management',
     'services.projects.desc': 'Project management, feasibility studies and implementation monitoring.',
+    'services.study.title': 'Case Study Mission',
+    'services.study.desc': 'Case analysis, project monitoring and evaluation with expertise.',
 
     // Service Detail
     'service.overview': 'Overview',

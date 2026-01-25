@@ -139,7 +139,8 @@ const ServiceDetail = () => {
         "Enquête et vérifications préalables",
         "Formalités administratives et foncières pour acquisition",
         "Obtention des actes de présomption foncière",
-        "Obtention des Titres Fonciers (TF)"
+        "Obtention des Titres Fonciers (TF)",
+        "Accompagnement, Montage de dossier et suivi pour la réalisation des ouvrages de type moderne et innovant"
       ],
       benefits: [
         "Sécurité juridique maximale",
@@ -179,6 +180,34 @@ const ServiceDetail = () => {
         "Analyse de votre idée/projet",
         "Élaboration du business plan",
         "Accompagnement dans la mise en œuvre"
+      ]
+    },
+    "etude-dossier": {
+      title: "Mission d'Étude de Dossier et Suivi Évaluation",
+      icon: FileText,
+      description: "Expertise approfondie dans l'analyse de dossiers et le suivi-évaluation de projets",
+      color: "bg-gradient-primary",
+      overview: "Notre service d'étude de dossier et suivi-évaluation offre une expertise complète pour analyser, suivre et évaluer tous types de dossiers et projets avec rigueur et professionnalisme.",
+      features: [
+        "Analyse approfondie de dossiers administratifs et techniques",
+        "Évaluation de la conformité des documents",
+        "Suivi de l'avancement des procédures",
+        "Rédaction de rapports d'évaluation",
+        "Recommandations et plans d'action",
+        "Accompagnement dans les démarches correctives"
+      ],
+      benefits: [
+        "Expertise approfondie",
+        "Suivi rigoureux",
+        "Rapports détaillés",
+        "Conseils personnalisés",
+        "Gain de temps"
+      ],
+      process: [
+        "Réception et analyse initiale du dossier",
+        "Évaluation détaillée et identification des points d'attention",
+        "Suivi régulier et rapport d'avancement",
+        "Recommandations finales et accompagnement"
       ]
     }
   };

@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/team-workstation.jpeg";
 import teamPhoto from "@/assets/Équipe  NDCC - Copy1.jpeg";
+import TestimonialsSection from "@/components/TestimonialsSection";
 
 const Index = () => {
   const { t } = useTranslation();
@@ -65,6 +66,13 @@ const Index = () => {
       icon: FolderOpen,
       description: t('services.projects.desc'),
       color: "bg-gradient-accent"
+    },
+    {
+      id: "etude-dossier",
+      title: t('services.study.title'), 
+      icon: FileText,
+      description: t('services.study.desc'),
+      color: "bg-gradient-primary"
     }
   ];
 
@@ -86,7 +94,7 @@ const Index = () => {
 
   const stats = [
     { number: "50+", label: "Clients Accompagnés", icon: Users },
-    { number: "10+", label: "Années d'Expérience", icon: Award },
+    { number: "15+", label: "Années d'Expérience", icon: Award },
     { number: "100+", label: "Projets Réalisés", icon: TrendingUp },
     { number: "95%", label: "Satisfaction Client", icon: Star }
   ];
@@ -191,6 +199,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Stats Section */}
       <section className="py-16 bg-gradient-hero text-primary-foreground">
