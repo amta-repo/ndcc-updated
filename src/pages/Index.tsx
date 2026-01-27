@@ -93,10 +93,10 @@ const Index = () => {
   ];
 
   const stats = [
-    { number: "50+", label: "Clients Accompagnés", icon: Users },
-    { number: "15+", label: "Années d'Expérience", icon: Award },
-    { number: "100+", label: "Projets Réalisés", icon: TrendingUp },
-    { number: "95%", label: "Satisfaction Client", icon: Star }
+    { number: "50+", label: t('stats.clients'), icon: Users },
+    { number: "15+", label: t('stats.years'), icon: Award },
+    { number: "100+", label: t('stats.projects'), icon: TrendingUp },
+    { number: "95%", label: t('stats.satisfaction'), icon: Star }
   ];
 
   return (
@@ -180,7 +180,7 @@ const Index = () => {
                     </p>
                     <Link to={`/services/${service.id}`}>
                       <Button className="w-full group bg-gradient-secondary hover:shadow-glow">
-                        En Savoir Plus
+                        {t('services.learnMore')}
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </Link>
@@ -192,7 +192,7 @@ const Index = () => {
           <div className="text-center mt-12">
             <Link to="/services">
               <Button size="lg" className="bg-gradient-primary hover:shadow-elegant">
-                Découvrir Tous Nos Services
+                {t('services.discoverAll')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -225,9 +225,9 @@ const Index = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Nos Clients</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('clients.title')}</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Des partenaires de confiance qui nous font honneur
+              {t('clients.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -250,7 +250,7 @@ const Index = () => {
           <div className="text-center">
             <Link to="/clients">
               <Button size="lg" variant="outline" className="hover-lift">
-                Voir Tous Nos Clients
+                {t('clients.viewAll')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -262,9 +262,9 @@ const Index = () => {
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Nos Partenaires Institutionnels</h2>
+            <h2 className="text-4xl font-bold mb-6">{t('clients.partners.title')}</h2>
             <p className="text-xl text-muted-foreground">
-              Des collaborations avec les ordres professionnels du Bénin
+              {t('clients.partners.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -292,39 +292,37 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6">
-                Pourquoi Choisir NDC CONSEILS ?
+                {t('whyUs.title')}
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                NDC CONSEILS est votre partenaire de confiance pour l'expertise comptable, 
-                fiscale, juridique et le management d'entreprise au Bénin. Notre mission 
-                est d'être les professionnels les plus sûrs de notre domaine.
+                {t('whyUs.description')}
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-secondary mt-0.5" />
                   <div>
-                    <h4 className="font-semibold">Expertise Reconnue</h4>
-                    <p className="text-muted-foreground">Plus de 10 ans d'expérience dans le conseil aux entreprises</p>
+                    <h4 className="font-semibold">{t('whyUs.expertise.title')}</h4>
+                    <p className="text-muted-foreground">{t('whyUs.expertise.desc')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-secondary mt-0.5" />
                   <div>
-                    <h4 className="font-semibold">Équipe Multidisciplinaire</h4>
-                    <p className="text-muted-foreground">Des experts en droit, fiscalité, comptabilité et management</p>
+                    <h4 className="font-semibold">{t('whyUs.team.title')}</h4>
+                    <p className="text-muted-foreground">{t('whyUs.team.desc')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-secondary mt-0.5" />
                   <div>
-                    <h4 className="font-semibold">Accompagnement Personnalisé</h4>
-                    <p className="text-muted-foreground">Solutions adaptées à vos besoins spécifiques</p>
+                    <h4 className="font-semibold">{t('whyUs.support.title')}</h4>
+                    <p className="text-muted-foreground">{t('whyUs.support.desc')}</p>
                   </div>
                 </div>
               </div>
               <Link to="/about">
                 <Button size="lg" className="bg-gradient-accent hover:shadow-glow">
-                  En Savoir Plus Sur Nous
+                  {t('whyUs.learnMore')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
@@ -347,17 +345,16 @@ const Index = () => {
       <section className="bg-gradient-secondary text-secondary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Prêt à Faire Évoluer Votre Entreprise ?
+            {t('cta.title')}
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Contactez nos experts dès aujourd'hui pour une consultation gratuite 
-            et découvrez comment nous pouvons vous accompagner vers le succès.
+            {t('cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
               <Button size="lg" variant="secondary" className="bg-white text-secondary hover:bg-white/90 hover-lift">
                 <Mail className="mr-2 h-5 w-5" />
-                Demander une Consultation
+                {t('cta.consultation')}
               </Button>
             </Link>
             <Button 
@@ -367,7 +364,7 @@ const Index = () => {
               onClick={() => window.open(`https://wa.me/22997706069`, '_blank')}
             >
               <Phone className="mr-2 h-5 w-5" />
-              Appeler Maintenant
+              {t('cta.call')}
             </Button>
           </div>
         </div>
