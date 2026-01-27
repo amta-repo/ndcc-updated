@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Target, Heart, CheckCircle } from "lucide-react";
 import teamPhoto from "@/assets/Équipe  NDCC - Copy1.jpeg";
-import ceoPhoto from "@/assets/CEO Mr Fiacre KEKE.jpeg";
+import ceoPhoto from "@/assets/ceo-photo.jpeg";
 
 const About = () => {
   const values = [
@@ -154,21 +154,34 @@ const About = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Mr. Fiacre KEKE</h3>
+                  <h3 className="text-2xl font-bold mb-2">Fiacre B. KEKE</h3>
                   <p className="text-lg text-secondary font-semibold mb-4">
-                    Directeur Executif/CEO
+                    Expert Juriste-Fiscaliste / Directeur Exécutif CEO
                   </p>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
-                    Notre Expert Juriste-fiscaliste, Mr. Fiacre KEKE dirige NDC CONSEILS 
-                    avec une vision claire : offrir des services de conseil de qualité supérieure 
-                    aux entreprises béninoises. Fort de son expertise en droit des affaires et 
-                    en fiscalité, il guide l'équipe vers l'excellence opérationnelle.
+                  <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
+                    Titulaire d'un Master en Management et Droit des Affaires (MDA), diplôme de 3ème Cycle. 
+                    Juriste Spécialiste du Droit des Affaires avec plus de 15 ans d'expériences professionnelles, 
+                    il met au quotidien son expertise pour l'accomplissement efficace et efficiente des missions 
+                    du Bureau d'Études NDC CONSEILS.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
+                    Consultant juridique et fiscal, il réalise des missions fiscales et juridiques en mobilisation 
+                    des ressources au profit des communes et collectivités publiques au Bénin et des Partenaires 
+                    Techniques Financiers (PTF). Auditeur-Formateur, il réalise des missions d'audit juridique et 
+                    fiscal, des formations périodiques sur les réformes fiscales et des programmes de renforcement 
+                    des capacités.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
+                    Enseignant de Fiscalité et de Droit des Affaires depuis 2014 dans les Instituts et Universités 
+                    Privés du Bénin, il dispense des modules sur la Fiscalité Appliquée et le Droit des Affaires (OHADA).
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     <Badge variant="secondary">Droit des Affaires</Badge>
                     <Badge variant="secondary">Fiscalité</Badge>
                     <Badge variant="secondary">Management</Badge>
-                    <Badge variant="secondary">Conseil Stratégique</Badge>
+                    <Badge variant="secondary">Audit</Badge>
+                    <Badge variant="secondary">Formation</Badge>
+                    <Badge variant="secondary">OHADA</Badge>
                   </div>
                 </div>
               </div>
