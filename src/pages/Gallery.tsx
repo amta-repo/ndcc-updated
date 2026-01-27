@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ZoomIn, Download } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import galleryImage1 from "@/assets/gallery-1.jpeg";
 import galleryImage2 from "@/assets/gallery-2.jpeg";
 import teamPhoto from "@/assets/team-photo.jpeg";
@@ -153,7 +154,10 @@ const Gallery = () => {
                         <ZoomIn className="h-4 w-4" />
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-4xl p-0">
+                    <DialogContent className="max-w-4xl p-0" aria-describedby={undefined}>
+                      <VisuallyHidden>
+                        <DialogTitle>{item.title}</DialogTitle>
+                      </VisuallyHidden>
                       <div className="relative">
                         <img 
                           src={item.src} 

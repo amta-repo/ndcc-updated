@@ -30,7 +30,7 @@ export const translations: Record<Language, Record<string, any>> = {
     'nav.consultation': 'Consultation Gratuite',
 
     // Hero
-    'hero.badge': "Bureau d'\u00c9tudes Professionnel",
+    'hero.badge': "Bureau d'Études Professionnel",
     'hero.company': 'NDC CONSEILS',
     'hero.title': "Votre Partenaire de Confiance pour l'Excellence en Affaires",
     'hero.subtitle': "Cabinet de conseil spécialisé en gestion d'entreprise, conseil fiscal et juridique, assistance comptable et gestion de projets au Bénin.",
@@ -45,6 +45,10 @@ export const translations: Record<Language, Record<string, any>> = {
     'services.hero.subtitle': 'Une expertise complète au service de votre développement',
     'services.cta.primary': 'Consultation Gratuite',
     'services.cta.brochure': 'Télécharger Notre Brochure',
+    'services.learnMore': 'En Savoir Plus',
+    'services.discoverAll': 'Découvrir Tous Nos Services',
+    'services.readyTitle': 'Prêt à Développer Votre Entreprise ?',
+    'services.readySubtitle': 'Contactez nos experts pour une consultation personnalisée et découvrez comment nos services peuvent transformer votre activité.',
 
     // Service Items
     'services.tax.title': 'Conseil Fiscal',
@@ -72,12 +76,59 @@ export const translations: Record<Language, Record<string, any>> = {
     'service.contact.call': 'Appeler Maintenant',
     'service.contact.request': 'Demander un Devis',
 
+    // Stats
+    'stats.clients': 'Clients Accompagnés',
+    'stats.years': "Années d'Expérience",
+    'stats.projects': 'Projets Réalisés',
+    'stats.satisfaction': 'Satisfaction Client',
+
+    // Clients Section
+    'clients.title': 'Nos Clients',
+    'clients.subtitle': 'Des partenaires de confiance qui nous font honneur',
+    'clients.viewAll': 'Voir Tous Nos Clients',
+    'clients.partners.title': 'Nos Partenaires Institutionnels',
+    'clients.partners.subtitle': 'Des collaborations avec les ordres professionnels du Bénin',
+    'clients.cta.join': 'Devenir Client',
+    'clients.cta.discover': 'Découvrir Nos Services',
+
+    // Why Choose Us
+    'whyUs.title': 'Pourquoi Choisir NDC CONSEILS ?',
+    'whyUs.description': "NDC CONSEILS est votre partenaire de confiance pour l'expertise comptable, fiscale, juridique et le management d'entreprise au Bénin. Notre mission est d'être les professionnels les plus sûrs de notre domaine.",
+    'whyUs.expertise.title': 'Expertise Reconnue',
+    'whyUs.expertise.desc': "Plus de 10 ans d'expérience dans le conseil aux entreprises",
+    'whyUs.team.title': 'Équipe Multidisciplinaire',
+    'whyUs.team.desc': 'Des experts en droit, fiscalité, comptabilité et management',
+    'whyUs.support.title': 'Accompagnement Personnalisé',
+    'whyUs.support.desc': 'Solutions adaptées à vos besoins spécifiques',
+    'whyUs.learnMore': 'En Savoir Plus Sur Nous',
+
+    // CTA
+    'cta.title': 'Prêt à Faire Évoluer Votre Entreprise ?',
+    'cta.subtitle': "Contactez nos experts dès aujourd'hui pour une consultation gratuite et découvrez comment nous pouvons vous accompagner vers le succès.",
+    'cta.consultation': 'Demander une Consultation',
+    'cta.call': 'Appeler Maintenant',
+
     // About
     'about.title': 'À Propos de NDC CONSEILS',
     'about.tagline': '"Être de loin, les professionnels les plus sûrs"',
     'about.mission': 'Notre Mission',
     'about.mission.text': "Accompagner les entreprises dans leur développement en proposant des solutions sur mesure en matière de gestion, conseil fiscal et juridique.",
+    'about.values.title': 'Nos Valeurs',
+    'about.values.subtitle': 'Les principes qui guident notre approche et notre engagement envers nos clients',
+    'about.leadership.title': 'Notre Direction',
+    'about.join.title': 'Rejoignez Nos Clients Satisfaits',
+    'about.join.subtitle': 'Faites confiance à notre expertise pour accompagner votre entreprise vers le succès et la croissance durable.',
     'about.join.cta': 'Demander une Consultation',
+
+    // Values
+    'values.excellence': 'Excellence',
+    'values.excellence.desc': 'Nous visons l\'excellence dans tous nos services et conseils.',
+    'values.partnership': 'Partenariat',
+    'values.partnership.desc': 'Nous construisons des relations durables avec nos clients.',
+    'values.results': 'Résultats',
+    'values.results.desc': 'Nous nous concentrons sur des solutions concrètes et mesurables.',
+    'values.trust': 'Confiance',
+    'values.trust.desc': 'Nous sommes les professionnels les plus sûrs de notre domaine.',
 
     // Contact
     'contact.title': 'Contactez-Nous',
@@ -102,14 +153,6 @@ export const translations: Record<Language, Record<string, any>> = {
     'contact.benefit.custom': 'Solutions personnalisées',
     'contact.benefit.support': 'Accompagnement complet',
 
-    // Clients
-    'clients.title': 'Nos Clients',
-    'clients.subtitle': 'Des partenaires de confiance qui nous font honneur',
-    'clients.partners.title': 'Nos Partenaires',
-    'clients.partners.subtitle': 'Découvrez quelques-uns des clients qui nous font confiance',
-    'clients.cta.join': 'Devenir Client',
-    'clients.cta.discover': 'Découvrir Nos Services',
-
     // Gallery
     'gallery.title': 'Galerie Photos',
     'gallery.subtitle': 'Découvrez NDC CONSEILS en images : notre équipe, nos formations et nos événements',
@@ -122,6 +165,7 @@ export const translations: Record<Language, Record<string, any>> = {
     'gallery.stats.trainings': 'Formations Dispensées',
     'gallery.stats.years': "Années d'Expérience",
     'gallery.stats.support': 'Support Client',
+    'gallery.viewImage': 'Voir l\'image',
 
     // Footer
     'footer.services': 'Services',
@@ -129,6 +173,10 @@ export const translations: Record<Language, Record<string, any>> = {
     'footer.contact': 'Contact',
     'footer.follow': 'Suivez-nous',
     'footer.rights': 'Tous droits réservés',
+    'footer.quickLinks': 'Liens Rapides',
+    'footer.ourServices': 'Nos Services',
+    'footer.privacy': 'Politique de Confidentialité',
+    'footer.terms': "Conditions d'Utilisation",
   },
   EN: {
     // Navigation
@@ -142,7 +190,7 @@ export const translations: Record<Language, Record<string, any>> = {
 
     // Hero
     'hero.badge': 'Professional Consulting Firm',
-    'hero.company': 'NDC CONSEIL',
+    'hero.company': 'NDC CONSEILS',
     'hero.title': 'Your Trusted Partner for Business Excellence',
     'hero.subtitle': 'Consulting firm specialized in business management, tax and legal advisory, accounting assistance and project management in Benin.',
     'hero.tagline': '"Being by far, the most reliable professionals"',
@@ -156,6 +204,10 @@ export const translations: Record<Language, Record<string, any>> = {
     'services.hero.subtitle': 'Comprehensive expertise to support your growth',
     'services.cta.primary': 'Free Consultation',
     'services.cta.brochure': 'Download Our Brochure',
+    'services.learnMore': 'Learn More',
+    'services.discoverAll': 'Discover All Our Services',
+    'services.readyTitle': 'Ready to Grow Your Business?',
+    'services.readySubtitle': 'Contact our experts for a personalized consultation and discover how our services can transform your business.',
 
     // Service Items
     'services.tax.title': 'Tax Advisory',
@@ -176,19 +228,66 @@ export const translations: Record<Language, Record<string, any>> = {
     // Service Detail
     'service.overview': 'Overview',
     'service.includes': "What's included",
-    'service.process.title': 'Our process',
-    'service.benefits.title': 'Key benefits',
+    'service.process.title': 'Our Process',
+    'service.benefits.title': 'Key Benefits',
     'service.interested': 'Interested in this service?',
     'service.contact.prompt': 'Contact our experts for a personalized consultation and a free quote.',
-    'service.contact.call': 'Call now',
-    'service.contact.request': 'Request a quote',
+    'service.contact.call': 'Call Now',
+    'service.contact.request': 'Request a Quote',
+
+    // Stats
+    'stats.clients': 'Clients Supported',
+    'stats.years': 'Years of Experience',
+    'stats.projects': 'Projects Completed',
+    'stats.satisfaction': 'Client Satisfaction',
+
+    // Clients Section
+    'clients.title': 'Our Clients',
+    'clients.subtitle': 'Trusted partners who honor us',
+    'clients.viewAll': 'View All Our Clients',
+    'clients.partners.title': 'Our Institutional Partners',
+    'clients.partners.subtitle': 'Collaborations with professional organizations in Benin',
+    'clients.cta.join': 'Become a Client',
+    'clients.cta.discover': 'Discover Our Services',
+
+    // Why Choose Us
+    'whyUs.title': 'Why Choose NDC CONSEILS?',
+    'whyUs.description': 'NDC CONSEILS is your trusted partner for accounting, tax, legal and business management expertise in Benin. Our mission is to be the most reliable professionals in our field.',
+    'whyUs.expertise.title': 'Recognized Expertise',
+    'whyUs.expertise.desc': 'Over 10 years of experience in business consulting',
+    'whyUs.team.title': 'Multidisciplinary Team',
+    'whyUs.team.desc': 'Experts in law, taxation, accounting and management',
+    'whyUs.support.title': 'Personalized Support',
+    'whyUs.support.desc': 'Solutions tailored to your specific needs',
+    'whyUs.learnMore': 'Learn More About Us',
+
+    // CTA
+    'cta.title': 'Ready to Grow Your Business?',
+    'cta.subtitle': 'Contact our experts today for a free consultation and discover how we can support you towards success.',
+    'cta.consultation': 'Request a Consultation',
+    'cta.call': 'Call Now',
 
     // About
     'about.title': 'About NDC CONSEILS',
     'about.tagline': '"Being by far, the most reliable professionals"',
     'about.mission': 'Our Mission',
     'about.mission.text': 'Supporting businesses in their development by providing tailored solutions in management, tax and legal consulting.',
+    'about.values.title': 'Our Values',
+    'about.values.subtitle': 'The principles that guide our approach and commitment to our clients',
+    'about.leadership.title': 'Our Leadership',
+    'about.join.title': 'Join Our Satisfied Clients',
+    'about.join.subtitle': 'Trust our expertise to support your business towards success and sustainable growth.',
     'about.join.cta': 'Request a Consultation',
+
+    // Values
+    'values.excellence': 'Excellence',
+    'values.excellence.desc': 'We strive for excellence in all our services and advice.',
+    'values.partnership': 'Partnership',
+    'values.partnership.desc': 'We build lasting relationships with our clients.',
+    'values.results': 'Results',
+    'values.results.desc': 'We focus on concrete and measurable solutions.',
+    'values.trust': 'Trust',
+    'values.trust.desc': 'We are the most reliable professionals in our field.',
 
     // Contact
     'contact.title': 'Contact Us',
@@ -213,14 +312,6 @@ export const translations: Record<Language, Record<string, any>> = {
     'contact.benefit.custom': 'Personalized solutions',
     'contact.benefit.support': 'Complete support',
 
-    // Clients
-    'clients.title': 'Our Clients',
-    'clients.subtitle': 'Trusted partners who honor us',
-    'clients.partners.title': 'Our Partners',
-    'clients.partners.subtitle': 'Discover some of the clients who trust us',
-    'clients.cta.join': 'Become a Client',
-    'clients.cta.discover': 'Discover Our Services',
-
     // Gallery
     'gallery.title': 'Photo Gallery',
     'gallery.subtitle': 'See NDC CONSEILS in images: our team, trainings and events',
@@ -233,6 +324,7 @@ export const translations: Record<Language, Record<string, any>> = {
     'gallery.stats.trainings': 'Trainings Delivered',
     'gallery.stats.years': 'Years of Experience',
     'gallery.stats.support': 'Client Support',
+    'gallery.viewImage': 'View image',
 
     // Footer
     'footer.services': 'Services',
@@ -240,5 +332,9 @@ export const translations: Record<Language, Record<string, any>> = {
     'footer.contact': 'Contact',
     'footer.follow': 'Follow us',
     'footer.rights': 'All rights reserved',
+    'footer.quickLinks': 'Quick Links',
+    'footer.ourServices': 'Our Services',
+    'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms of Use',
   }
 };
