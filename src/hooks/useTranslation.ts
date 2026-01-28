@@ -177,6 +177,16 @@ export const translations: Record<Language, Record<string, any>> = {
     'footer.ourServices': 'Nos Services',
     'footer.privacy': 'Politique de Confidentialité',
     'footer.terms': "Conditions d'Utilisation",
+
+    // News
+    'news.badge': 'Actualités',
+    'news.title': 'Actualités',
+    'news.subtitle': 'Restez informé des dernières nouvelles et événements de NDC CONSEILS',
+    'news.seeMore': 'Voir Plus',
+    'news.close': 'Fermer',
+    'news.cta.title': 'Besoin de Nos Services ?',
+    'news.cta.subtitle': 'Contactez nos experts pour une consultation personnalisée et découvrez comment nous pouvons vous accompagner.',
+    'nav.news': 'Actualités',
   },
   EN: {
     // Navigation
@@ -336,5 +346,15 @@ export const translations: Record<Language, Record<string, any>> = {
     'footer.ourServices': 'Our Services',
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Use',
+
+    // News
+    'news.badge': 'News',
+    'news.title': 'News',
+    'news.subtitle': 'Stay informed about the latest news and events from NDC CONSEILS',
+    'news.seeMore': 'See More',
+    'news.close': 'Close',
+    'news.cta.title': 'Need Our Services?',
+    'news.cta.subtitle': 'Contact our experts for a personalized consultation and discover how we can support you.',
+    'nav.news': 'News',
   }
 };
