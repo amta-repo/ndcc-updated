@@ -222,7 +222,7 @@ const Gallery = () => {
               <div className="text-secondary-foreground/80">{t('gallery.stats.trainings')}</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <div className="text-4xl font-bold mb-2">10+</div>
+              <div className="text-4xl font-bold mb-2">15+</div>
               <div className="text-secondary-foreground/80">{t('gallery.stats.years')}</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
