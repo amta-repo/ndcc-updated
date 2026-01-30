@@ -37,7 +37,7 @@ const NewsTicker = () => {
   };
 
   return (
-    <div className="bg-accent text-accent-foreground overflow-hidden">
+    <div className="bg-accent/40 text-foreground overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex items-center py-2">
           <Link 
