@@ -155,7 +155,6 @@ const TestimonialsSection = () => {
                 </div>
                 
                 <div className="space-y-1">
-                  <h4 className="text-lg font-bold">{currentTestimonial.name}</h4>
                   <p className="text-muted-foreground">{currentTestimonial.role}</p>
                   <p className="text-primary font-medium">{currentTestimonial.company}</p>
                 </div>
