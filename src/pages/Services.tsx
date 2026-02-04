@@ -147,7 +147,7 @@ const Services = () => {
                 {t('services.cta.primary')}
               </Button>
             </Link>
-            <a href="/docs/brochure.pdf" download>
+            <a href="/docs/brochure.docx" download>
               <Button size="lg" variant="outline" className="hover-lift">
                 {t('services.cta.brochure')}
               </Button>

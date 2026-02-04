@@ -58,7 +58,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Téléphone",
-      details: ["+229 01 97 70 60 69"],
+      details: ["+229 01 97 70 60 69", "+229 01 40 57 91 58"],
       color: "bg-gradient-primary"
     },
     {
@@ -81,7 +81,7 @@ const Contact = () => {
     }
   ];
 
-  const whatsappNumber = "+22997706069";
+  const whatsappNumber = "+2290197706069";
   const whatsappMessage = encodeURIComponent("Bonjour NDC CONSEILS, j'aimerais obtenir des informations sur vos services.");
 
   return (
