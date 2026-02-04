@@ -331,7 +331,7 @@ const Index = () => {
               <img 
                 src={teamPhoto} 
                 alt="Équipe NDC CONSEILS" 
-                className="rounded-2xl shadow-elegant w-full hover-lift"
+                className="rounded-2xl shadow-elegant w-full hover-lift object-cover aspect-[4/3]"
               />
               <div className="absolute -bottom-6 -right-6 bg-gradient-secondary p-6 rounded-xl shadow-glow">
                 <Award className="h-10 w-10 text-secondary-foreground" />
