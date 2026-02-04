@@ -361,7 +361,7 @@ const Index = () => {
               size="lg" 
               variant="outline" 
               className="border-white text-white hover:bg-white/10"
-              onClick={() => window.open(`https://wa.me/22997706069`, '_blank')}
+              onClick={() => window.open(`https://wa.me/2290197706069`, '_blank')}
             >
               <Phone className="mr-2 h-5 w-5" />
               {t('cta.call')}

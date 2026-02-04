@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Award, Users, Target, Heart, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/hooks/useTranslation";
-import teamPhoto from "@/assets/Équipe  NDCC - Copy1.jpeg";
-import ceoPhoto from "@/assets/ceo-photo.jpeg";
+import ndccMission from "@/assets/ndcc-mission.jpg";
+import ceoPhoto from "@/assets/directeur-executif.jpeg";
 
 const About = () => {
   const { t } = useTranslation();
@@ -86,8 +86,8 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src={teamPhoto} 
-                alt="Équipe NDC CONSEILS" 
+                src={ndccMission} 
+                alt="NDC CONSEILS Services" 
                 className="rounded-2xl shadow-elegant w-full hover-lift"
               />
               <div className="absolute -bottom-4 -right-4 bg-gradient-accent p-4 rounded-xl shadow-glow">
@@ -144,23 +144,23 @@ const About = () => {
           </div>
           <div className="max-w-4xl mx-auto">
             <Card className="p-8 shadow-elegant hover-lift">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="text-center lg:text-left">
+              <div className="flex flex-col gap-8">
+                <div className="text-center">
                   <div className="relative inline-block">
                     <img 
                       src={ceoPhoto} 
-                      alt="Mr. Fiacre KEKE - Directeur Executif/CEO NDC CONSEILS" 
-                      className="w-64 h-80 object-cover rounded-2xl shadow-elegant mx-auto lg:mx-0"
+                      alt="Mr. Fiacre KEKE - Directeur Exécutif NDC CONSEILS" 
+                      className="w-64 h-80 object-cover rounded-2xl shadow-elegant mx-auto"
                     />
                     <Badge className="absolute -top-2 -right-2 bg-gradient-accent text-accent-foreground">
-                      CEO
+                      Directeur Exécutif
                     </Badge>
                   </div>
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-2">Fiacre B. KEKE</h3>
                   <p className="text-lg text-secondary font-semibold mb-4">
-                    Expert Juriste-Fiscaliste / Directeur Exécutif CEO
+                    Juriste-Fiscaliste
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
                     Expert Juriste-Fiscaliste, il est titulaire d'un Master en Management et Droit des Affaires (MDA), diplôme de 3ème Cycle.

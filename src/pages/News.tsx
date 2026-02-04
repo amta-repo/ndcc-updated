@@ -219,7 +219,7 @@ const News = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             {t('news.cta.subtitle')}
           </p>
-          <a href="https://wa.me/22997706069" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/2290197706069" target="_blank" rel="noopener noreferrer">
             <Button size="lg" variant="secondary" className="hover-lift">
               {t('nav.consultation')}
             </Button>
