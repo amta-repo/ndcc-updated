@@ -150,7 +150,7 @@ const About = () => {
                     <img 
                       src={ceoPhoto} 
                       alt="Mr. Fiacre KEKE - Directeur Exécutif NDC CONSEILS" 
-                      className="w-64 h-80 object-cover rounded-2xl shadow-elegant mx-auto"
+                      className="w-96 h-[30rem] object-cover rounded-2xl shadow-elegant mx-auto"
                     />
                     <Badge className="absolute -top-2 -right-2 bg-gradient-accent text-accent-foreground">
                       Directeur Exécutif
