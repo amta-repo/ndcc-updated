@@ -4,13 +4,23 @@ import { useTranslation } from "@/hooks/useTranslation";
 const newsItems = [
   {
     id: 1,
-    titleFR: "CEO NDC Conseils et INGCO Bénin au Record Culinaire Guinness",
+    titleFR: "CEO NDC Conseils et INGCO Benin au Record Culinaire Guinness",
     titleEN: "NDC Conseils CEO and INGCO Benin at the Guinness Culinary Record",
   },
   {
     id: 2,
-    titleFR: "Villa R+1 équipée et meublée en vente",
+    titleFR: "Villa R+1 equipee et meublee en vente",
     titleEN: "Furnished R+1 Villa for sale",
+  },
+  {
+    id: 3,
+    titleFR: "Opportunite de Formation - Pressing Mobile (Abomey-Calavi)",
+    titleEN: "Training Opportunity - Mobile Laundry (Abomey-Calavi)",
+  },
+  {
+    id: 4,
+    titleFR: "Avis de Recrutement - WashMan",
+    titleEN: "Recruitment Notice - WashMan",
   },
 ];
 
