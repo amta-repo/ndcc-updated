@@ -1,17 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
-import galleryImage1 from "@/assets/gallery-1.jpeg";
-import galleryImage2 from "@/assets/gallery-2.jpeg";
-import teamPhoto from "@/assets/team-photo.jpeg";
+
+import ingco1 from "@/assets/ingco-ndcc1.jpeg";
+import ingco2 from "@/assets/ingco-ndcc2.jpeg";
+import ingco3 from "@/assets/ingco-ndcc3.jpeg";
+import ingco4 from "@/assets/ingco-ndcc4.jpeg";
+import house1 from "@/assets/house1.jpeg";
+import house2 from "@/assets/house2.jpeg";
+import house3 from "@/assets/house3.jpeg";
+import house4 from "@/assets/house4.jpeg";
+import house5 from "@/assets/house5.jpeg";
+import house6 from "@/assets/house6.jpeg";
 
 interface NewsItem {
   id: number;
-  image: string;
+  images: string[];
   titleFR: string;
   titleEN: string;
   summaryFR: string;
@@ -22,68 +30,80 @@ interface NewsItem {
   category: string;
 }
 
-const newsData: NewsItem[] = [
+export const newsData: NewsItem[] = [
   {
     id: 1,
-    image: teamPhoto,
-    titleFR: "NDC CONSEILS lance de nouveaux services de conseil fiscal",
-    titleEN: "NDC CONSEILS launches new tax advisory services",
-    summaryFR: "Découvrez notre nouvelle gamme de services fiscaux adaptés aux PME béninoises.",
-    summaryEN: "Discover our new range of tax services tailored for Beninese SMEs.",
-    contentFR: "NDC CONSEILS est fier d'annoncer le lancement de nouveaux services de conseil fiscal spécialement conçus pour les petites et moyennes entreprises du Bénin. Ces services comprennent l'optimisation fiscale, la préparation des déclarations fiscales, l'assistance lors des contrôles fiscaux, et des conseils personnalisés pour maximiser vos avantages fiscaux tout en restant en conformité avec la législation en vigueur.\n\nNotre équipe d'experts fiscalistes, dirigée par M. Fiacre KEKE, met à votre disposition plus de 15 ans d'expérience pour vous accompagner dans toutes vos démarches fiscales. Contactez-nous dès aujourd'hui pour une consultation gratuite.",
-    contentEN: "NDC CONSEILS is proud to announce the launch of new tax advisory services specially designed for small and medium enterprises in Benin. These services include tax optimization, tax return preparation, assistance during tax audits, and personalized advice to maximize your tax benefits while remaining compliant with current legislation.\n\nOur team of tax experts, led by Mr. Fiacre KEKE, brings over 15 years of experience to assist you with all your tax matters. Contact us today for a free consultation.",
-    date: "2026-01-25",
-    category: "Services"
-  },
-  {
-    id: 2,
-    image: galleryImage1,
-    titleFR: "Formation en gestion d'entreprise prévue pour février 2026",
-    titleEN: "Business management training scheduled for February 2026",
-    summaryFR: "Inscrivez-vous à notre prochaine session de formation en management et stratégie d'entreprise.",
-    summaryEN: "Register for our upcoming training session on business management and strategy.",
-    contentFR: "NDC CONSEILS organise une formation intensive en gestion d'entreprise du 15 au 20 février 2026 à Abomey-Calavi. Cette formation couvrira les thèmes suivants :\n\n• Stratégie d'entreprise et planification\n• Gestion financière et comptabilité\n• Leadership et management d'équipe\n• Marketing et développement commercial\n• Cadre juridique et fiscal OHADA\n\nLes places sont limitées à 25 participants. Inscrivez-vous rapidement pour bénéficier du tarif early bird. Un certificat de participation sera délivré à la fin de la formation.",
-    contentEN: "NDC CONSEILS is organizing an intensive business management training from February 15-20, 2026 in Abomey-Calavi. This training will cover the following topics:\n\n• Business strategy and planning\n• Financial management and accounting\n• Leadership and team management\n• Marketing and business development\n• OHADA legal and tax framework\n\nPlaces are limited to 25 participants. Register quickly to benefit from the early bird rate. A certificate of participation will be issued at the end of the training.",
-    date: "2026-01-20",
-    category: "Formation"
-  },
-  {
-    id: 3,
-    image: galleryImage2,
-    titleFR: "Partenariat stratégique avec les ordres professionnels du Bénin",
-    titleEN: "Strategic partnership with professional organizations of Benin",
-    summaryFR: "NDC CONSEILS renforce ses liens avec les ordres professionnels pour mieux vous servir.",
-    summaryEN: "NDC CONSEILS strengthens ties with professional organizations to better serve you.",
-    contentFR: "Nous sommes heureux d'annoncer la signature d'un partenariat stratégique avec plusieurs ordres professionnels du Bénin, notamment l'Ordre des Experts Comptables et des Comptables Agréés (OECCA) et l'Ordre des Avocats du Bénin.\n\nCe partenariat nous permettra de :\n• Renforcer notre réseau d'experts\n• Offrir des services encore plus complets à nos clients\n• Participer à des formations continues\n• Contribuer au développement du secteur des services professionnels au Bénin\n\nCette collaboration témoigne de notre engagement envers l'excellence et notre volonté d'être les professionnels les plus sûrs du marché.",
-    contentEN: "We are pleased to announce the signing of a strategic partnership with several professional organizations in Benin, including the Order of Chartered Accountants and Certified Accountants (OECCA) and the Bar Association of Benin.\n\nThis partnership will allow us to:\n• Strengthen our network of experts\n• Offer even more comprehensive services to our clients\n• Participate in continuing education\n• Contribute to the development of the professional services sector in Benin\n\nThis collaboration demonstrates our commitment to excellence and our desire to be the most reliable professionals in the market.",
-    date: "2026-01-15",
+    images: [ingco1, ingco2, ingco3, ingco4],
+    titleFR: "CEO NDC Conseils et INGCO Bénin au Record Culinaire Guinness",
+    titleEN: "NDC Conseils CEO and INGCO Benin at the Guinness Culinary Record",
+    summaryFR: "Image du CEO NDC Conseils et INGCO Bénin, partenaire du cabinet NDC Conseils aux côtés du Chef Delphin Agbetogan alias le guépard des fourneaux, Record Culinaire Guinness.",
+    summaryEN: "Photo of NDC Conseils CEO and INGCO Benin, partner of NDC Conseils alongside Chef Delphin Agbetogan aka the cheetah of the kitchen, Guinness Culinary Record.",
+    contentFR: "Image du CEO NDC Conseils et INGCO Bénin, partenaire du cabinet NDC Conseils aux côtés du Chef Delphin Agbetogan alias le guépard des fourneaux, Record Culinaire Guinness.\n\nCet événement marquant a réuni des personnalités du monde des affaires et de la gastronomie béninoise autour d'un défi culinaire historique. NDC Conseils, à travers son partenariat avec INGCO Bénin, réaffirme son engagement envers le développement et la promotion des talents locaux.",
+    contentEN: "Photo of NDC Conseils CEO and INGCO Benin, partner of NDC Conseils alongside Chef Delphin Agbetogan aka the cheetah of the kitchen, Guinness Culinary Record.\n\nThis landmark event brought together personalities from the business and culinary world of Benin around a historic cooking challenge. NDC Conseils, through its partnership with INGCO Benin, reaffirms its commitment to the development and promotion of local talents.",
+    date: "2026-03-05",
     category: "Partenariat"
   },
   {
-    id: 4,
-    image: teamPhoto,
-    titleFR: "Nouveau guide de sécurisation foncière disponible",
-    titleEN: "New land security guide available",
-    summaryFR: "Téléchargez gratuitement notre guide complet sur la sécurisation foncière au Bénin.",
-    summaryEN: "Download our comprehensive land security guide in Benin for free.",
-    contentFR: "NDC CONSEILS met à votre disposition un guide complet sur la sécurisation foncière au Bénin. Ce document détaillé couvre tous les aspects de la procédure de sécurisation de vos biens immobiliers :\n\n• Les étapes de l'obtention du titre foncier\n• Les documents nécessaires\n• Les délais et coûts associés\n• Les pièges à éviter\n• Vos droits et obligations\n\nCe guide est le fruit de notre expérience de plus de 15 ans dans l'accompagnement des propriétaires fonciers. Téléchargez-le gratuitement sur notre site ou contactez-nous pour un accompagnement personnalisé.",
-    contentEN: "NDC CONSEILS provides you with a comprehensive guide on land security in Benin. This detailed document covers all aspects of the procedure for securing your real estate:\n\n• Steps to obtain the land title\n• Required documents\n• Associated timelines and costs\n• Pitfalls to avoid\n• Your rights and obligations\n\nThis guide is the result of our over 15 years of experience in supporting landowners. Download it for free on our website or contact us for personalized assistance.",
-    date: "2026-01-10",
-    category: "Ressources"
-  },
-  {
-    id: 5,
-    image: galleryImage1,
-    titleFR: "NDC CONSEILS célèbre 15 ans d'excellence",
-    titleEN: "NDC CONSEILS celebrates 15 years of excellence",
-    summaryFR: "Retour sur 15 années d'accompagnement des entreprises béninoises vers le succès.",
-    summaryEN: "Looking back at 15 years of supporting Beninese businesses towards success.",
-    contentFR: "Cette année marque le 15ème anniversaire de NDC CONSEILS ! Depuis notre création, nous avons eu le privilège d'accompagner des centaines d'entreprises béninoises dans leur développement et leur réussite.\n\nQuelques chiffres clés :\n• Plus de 50 clients réguliers\n• Plus de 200 projets réalisés\n• Plus de 100 formations dispensées\n• 98% de satisfaction client\n\nNous tenons à remercier tous nos clients, partenaires et collaborateurs qui ont contribué à ce succès. Ensemble, continuons à bâtir l'avenir économique du Bénin.\n\n\"Être de loin, les professionnels les plus sûrs\" - Telle est notre devise et notre engagement envers vous.",
-    contentEN: "This year marks the 15th anniversary of NDC CONSEILS! Since our founding, we have had the privilege of supporting hundreds of Beninese businesses in their development and success.\n\nSome key figures:\n• Over 50 regular clients\n• Over 200 completed projects\n• Over 100 trainings delivered\n• 98% client satisfaction\n\nWe would like to thank all our clients, partners and collaborators who have contributed to this success. Together, let's continue to build the economic future of Benin.\n\n\"Being by far, the most reliable professionals\" - This is our motto and our commitment to you.",
-    date: "2026-01-05",
-    category: "Entreprise"
+    id: 2,
+    images: [house1, house2, house3, house4, house5, house6],
+    titleFR: "Villa R+1 équipée et meublée en vente",
+    titleEN: "Furnished R+1 Villa for sale",
+    summaryFR: "Une villa équipée et meublée de type R+1 5 pièces est mise en vente par le cabinet NDC Conseils. Titre de propriété : Titre Foncier.",
+    summaryEN: "A fully equipped and furnished 5-room R+1 villa is put on sale by NDC Conseils. Property title: Land Title.",
+    contentFR: "Une villa équipée et meublée de type R+1 5 pièces est mise en vente par le cabinet NDC Conseils.\n\nNB: Titre de propriété : Titre Foncier\n\nContactez-nous pour plus d'informations et pour planifier une visite.\n\nTéléphone : +229 01 97 70 60 69 / +229 01 40 57 91 58",
+    contentEN: "A fully equipped and furnished 5-room R+1 villa is put on sale by NDC Conseils.\n\nNote: Property title: Land Title\n\nContact us for more information and to schedule a visit.\n\nPhone: +229 01 97 70 60 69 / +229 01 40 57 91 58",
+    date: "2026-03-08",
+    category: "Immobilier"
   }
 ];
+
+const ImageCarousel = ({ images, alt, autoSlide = false }: { images: string[]; alt: string; autoSlide?: boolean }) => {
+  const [current, setCurrent] = useState(0);
+
+  const next = useCallback(() => setCurrent(i => (i + 1) % images.length), [images.length]);
+  const prev = useCallback(() => setCurrent(i => (i - 1 + images.length) % images.length), [images.length]);
+
+  useEffect(() => {
+    if (!autoSlide) return;
+    const interval = setInterval(next, 3500);
+    return () => clearInterval(interval);
+  }, [autoSlide, next]);
+
+  return (
+    <div className="relative w-full h-full group">
+      <img
+        src={images[current]}
+        alt={`${alt} ${current + 1}`}
+        className="w-full h-full object-cover transition-opacity duration-500"
+      />
+      {images.length > 1 && (
+        <>
+          <button
+            onClick={(e) => { e.stopPropagation(); prev(); }}
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/70 hover:bg-background/90 rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <ChevronLeft className="h-5 w-5 text-foreground" />
+          </button>
+          <button
+            onClick={(e) => { e.stopPropagation(); next(); }}
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/70 hover:bg-background/90 rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <ChevronRight className="h-5 w-5 text-foreground" />
+          </button>
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+            {images.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={(e) => { e.stopPropagation(); setCurrent(idx); }}
+                className={`w-2 h-2 rounded-full transition-colors ${idx === current ? 'bg-primary' : 'bg-background/60'}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
 
 const News = () => {
   const { language, t } = useTranslation();
@@ -119,16 +139,16 @@ const News = () => {
       {/* News Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {newsData.map((item, index) => (
-              <Card 
+              <Card
                 key={item.id}
                 className="group overflow-hidden hover-lift shadow-card animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="relative overflow-hidden h-48">
-                  <img 
-                    src={item.image} 
+                  <img
+                    src={item.images[0]}
                     alt={getTitle(item)}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -149,8 +169,8 @@ const News = () => {
                   <p className="text-muted-foreground mb-4 line-clamp-3">
                     {getSummary(item)}
                   </p>
-                  <Button 
-                    variant="link" 
+                  <Button
+                    variant="link"
                     className="p-0 h-auto text-primary hover:text-accent"
                     onClick={() => setSelectedNews(item)}
                   >
@@ -168,13 +188,13 @@ const News = () => {
         <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
           {selectedNews && (
             <>
-              <div className="relative h-64 -mx-6 -mt-6 mb-6">
-                <img 
-                  src={selectedNews.image} 
+              <div className="relative h-72 -mx-6 -mt-6 mb-6">
+                <ImageCarousel
+                  images={selectedNews.images}
                   alt={getTitle(selectedNews)}
-                  className="w-full h-full object-cover"
+                  autoSlide={true}
                 />
-                <Badge className="absolute top-4 left-4 bg-gradient-accent text-accent-foreground">
+                <Badge className="absolute top-4 left-4 z-10 bg-gradient-accent text-accent-foreground">
                   {selectedNews.category}
                 </Badge>
               </div>
@@ -198,7 +218,7 @@ const News = () => {
                 ))}
               </div>
               <div className="mt-6 pt-4 border-t">
-                <Button 
+                <Button
                   className="bg-gradient-primary hover-lift"
                   onClick={() => setSelectedNews(null)}
                 >

@@ -4,28 +4,13 @@ import { useTranslation } from "@/hooks/useTranslation";
 const newsItems = [
   {
     id: 1,
-    titleFR: "NDC CONSEILS lance de nouveaux services de conseil fiscal",
-    titleEN: "NDC CONSEILS launches new tax advisory services",
+    titleFR: "CEO NDC Conseils et INGCO Bénin au Record Culinaire Guinness",
+    titleEN: "NDC Conseils CEO and INGCO Benin at the Guinness Culinary Record",
   },
   {
     id: 2,
-    titleFR: "Formation en gestion d'entreprise prévue pour février 2026",
-    titleEN: "Business management training scheduled for February 2026",
-  },
-  {
-    id: 3,
-    titleFR: "Partenariat stratégique avec les ordres professionnels du Bénin",
-    titleEN: "Strategic partnership with professional organizations of Benin",
-  },
-  {
-    id: 4,
-    titleFR: "Nouveau guide de sécurisation foncière disponible",
-    titleEN: "New land security guide available",
-  },
-  {
-    id: 5,
-    titleFR: "NDC CONSEILS célèbre 15 ans d'excellence",
-    titleEN: "NDC CONSEILS celebrates 15 years of excellence",
+    titleFR: "Villa R+1 équipée et meublée en vente",
+    titleEN: "Furnished R+1 Villa for sale",
   },
 ];
 
