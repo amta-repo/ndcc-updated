@@ -263,6 +263,12 @@ const News = () => {
                     {paragraph}
                   </p>
                 ))}
+                {selectedNews.hasSocialLinks && <SocialLinks />}
+                {selectedNews.hasPhoneLink && (
+                  <a href={`tel:${selectedNews.hasPhoneLink}`} className="inline-flex items-center gap-2 text-primary hover:underline mt-2">
+                    <FaPhone className="h-4 w-4" /> {selectedNews.hasPhoneLink}
+                  </a>
+                )}
               </div>
               <div className="mt-6 pt-4 border-t">
                 <Button
