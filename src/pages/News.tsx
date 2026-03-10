@@ -31,6 +31,8 @@ interface NewsItem {
   contentEN: string;
   date: string;
   category: string;
+  hasSocialLinks?: boolean;
+  hasPhoneLink?: string;
 }
 
 const SocialLinks = () => (
