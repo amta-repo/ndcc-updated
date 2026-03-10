@@ -33,15 +33,29 @@ interface NewsItem {
   category: string;
 }
 
+const SocialLinks = () => (
+  <div className="flex items-center gap-4 mt-4">
+    <a href="https://www.instagram.com/washmanbj/profilecard/?igsh=cnp1YWNtd2I2NDIy" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-700 transition-colors">
+      <FaInstagram className="h-6 w-6" />
+    </a>
+    <a href="https://www.facebook.com/share/Sh8UA9Mk78wnpH26/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 transition-colors">
+      <FaFacebook className="h-6 w-6" />
+    </a>
+    <a href="https://www.tiktok.com/@bigsarlwashman?_t=ZM-8xFbldXyTSw&_r=1" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-muted-foreground transition-colors">
+      <FaTiktok className="h-6 w-6" />
+    </a>
+  </div>
+);
+
 export const newsData: NewsItem[] = [
   {
     id: 1,
     images: [ingco1, ingco2, ingco3, ingco4],
-    titleFR: "CEO NDC Conseils et INGCO Bénin au Record Culinaire Guinness",
+    titleFR: "CEO NDC Conseils et INGCO Benin au Record Culinaire Guinness",
     titleEN: "NDC Conseils CEO and INGCO Benin at the Guinness Culinary Record",
-    summaryFR: "Image du CEO NDC Conseils et INGCO Bénin, partenaire du cabinet NDC Conseils aux côtés du Chef Delphin Agbetogan alias le guépard des fourneaux, Record Culinaire Guinness.",
+    summaryFR: "Image du CEO NDC Conseils et INGCO Benin, partenaire du cabinet NDC Conseils aux cotes du Chef Delphin Agbetogan alias le guepard des fourneaux, Record Culinaire Guinness.",
     summaryEN: "Photo of NDC Conseils CEO and INGCO Benin, partner of NDC Conseils alongside Chef Delphin Agbetogan aka the cheetah of the kitchen, Guinness Culinary Record.",
-    contentFR: "Image du CEO NDC Conseils et INGCO Bénin, partenaire du cabinet NDC Conseils aux côtés du Chef Delphin Agbetogan alias le guépard des fourneaux, Record Culinaire Guinness.\n\nCet événement marquant a réuni des personnalités du monde des affaires et de la gastronomie béninoise autour d'un défi culinaire historique. NDC Conseils, à travers son partenariat avec INGCO Bénin, réaffirme son engagement envers le développement et la promotion des talents locaux.",
+    contentFR: "Image du CEO NDC Conseils et INGCO Benin, partenaire du cabinet NDC Conseils aux cotes du Chef Delphin Agbetogan alias le guepard des fourneaux, Record Culinaire Guinness.\n\nCet evenement marquant a reuni des personnalites du monde des affaires et de la gastronomie beninoise autour d'un defi culinaire historique. NDC Conseils, a travers son partenariat avec INGCO Benin, reaffirme son engagement envers le developpement et la promotion des talents locaux.",
     contentEN: "Photo of NDC Conseils CEO and INGCO Benin, partner of NDC Conseils alongside Chef Delphin Agbetogan aka the cheetah of the kitchen, Guinness Culinary Record.\n\nThis landmark event brought together personalities from the business and culinary world of Benin around a historic cooking challenge. NDC Conseils, through its partnership with INGCO Benin, reaffirms its commitment to the development and promotion of local talents.",
     date: "2026-03-05",
     category: "Partenariat"
@@ -49,14 +63,42 @@ export const newsData: NewsItem[] = [
   {
     id: 2,
     images: [house1, house2, house3, house4, house5, house6],
-    titleFR: "Villa R+1 équipée et meublée en vente",
+    titleFR: "Villa R+1 equipee et meublee en vente",
     titleEN: "Furnished R+1 Villa for sale",
-    summaryFR: "Une villa équipée et meublée de type R+1 5 pièces est mise en vente par le cabinet NDC Conseils. Titre de propriété : Titre Foncier.",
+    summaryFR: "Une villa equipee et meublee de type R+1 5 pieces est mise en vente par le cabinet NDC Conseils. Titre de propriete : Titre Foncier.",
     summaryEN: "A fully equipped and furnished 5-room R+1 villa is put on sale by NDC Conseils. Property title: Land Title.",
-    contentFR: "Une villa équipée et meublée de type R+1 5 pièces est mise en vente par le cabinet NDC Conseils.\n\nNB: Titre de propriété : Titre Foncier\n\nContactez-nous pour plus d'informations et pour planifier une visite.\n\nTéléphone : +229 01 97 70 60 69 / +229 01 40 57 91 58",
+    contentFR: "Une villa equipee et meublee de type R+1 5 pieces est mise en vente par le cabinet NDC Conseils.\n\nNB: Titre de propriete : Titre Foncier\n\nContactez-nous pour plus d'informations et pour planifier une visite.\n\nTelephone : +229 01 97 70 60 69 / +229 01 40 57 91 58",
     contentEN: "A fully equipped and furnished 5-room R+1 villa is put on sale by NDC Conseils.\n\nNote: Property title: Land Title\n\nContact us for more information and to schedule a visit.\n\nPhone: +229 01 97 70 60 69 / +229 01 40 57 91 58",
     date: "2026-03-08",
     category: "Immobilier"
+  },
+  {
+    id: 3,
+    images: [pressingMobile],
+    titleFR: "Opportunite de Formation - Pressing Mobile (Abomey-Calavi)",
+    titleEN: "Training Opportunity - Mobile Laundry (Abomey-Calavi)",
+    summaryFR: "Notre pressing mobile situe a Calavi dans la ZOPAH recrute des jeunes motives pour une formation pratique aux metiers du pressing.",
+    summaryEN: "Our mobile laundry located in Calavi in the ZOPAH area is recruiting motivated young people for practical training in laundry services.",
+    contentFR: "OPPORTUNITE DE FORMATION - PRESSING MOBILE (Abomey-Calavi)\n\nTu as entre 18 et 25 ans ?\nTu veux apprendre un metier et avoir une vraie competence professionnelle ?\n\nNotre pressing mobile situe a Calavi dans la ZOPAH recrute des jeunes motives pour une formation pratique aux metiers du pressing. Au programme, une formation complete et pratique avec Possibilite d'integrer notre equipe.\n\nSi interesse, Merci de contacter le +22901 52525233\n\nPartage autour de toi !\n\nWashMan, parce que vous meritez le meilleur.\n\nContact : +2290152525233\n\nSuivez-nous sur nos reseaux sociaux :",
+    contentEN: "TRAINING OPPORTUNITY - MOBILE LAUNDRY (Abomey-Calavi)\n\nAre you between 18 and 25 years old?\nDo you want to learn a trade and gain real professional skills?\n\nOur mobile laundry located in Calavi in the ZOPAH area is recruiting motivated young people for practical training in laundry services. The program includes complete and practical training with the possibility of joining our team.\n\nIf interested, please contact +22901 52525233\n\nShare around you!\n\nWashMan, because you deserve the best.\n\nContact: +2290152525233\n\nFollow us on social media:",
+    date: "2026-03-10",
+    category: "Formation",
+    hasSocialLinks: true,
+    hasPhoneLink: "+2290152525233"
+  },
+  {
+    id: 4,
+    images: [avisRecrutement],
+    titleFR: "Avis de Recrutement - WashMan",
+    titleEN: "Recruitment Notice - WashMan",
+    summaryFR: "Un pressing situe a Calavi non loin d'Arconville recherche un agent sachant correctement lire, ecrire et ayant une bonne maitrise des engins a 4 temps.",
+    summaryEN: "A laundry located in Calavi near Arconville is looking for an agent who can read and write correctly and has good knowledge of 4-stroke engines.",
+    contentFR: "Avis de recrutement\n\nUn pressing situe a Calavi non loin d'Arconville recherche un agent sachant correctement lire, ecrire et ayant une bonne maitrise des engins a 4 temps.\n\nLes candidats interesses sont pries de deposer leur CV plus une lettre de motivation manuscrite au siege du cabinet NDC situe dans la rue de la mairie de Calavi.\n\nContact: +22901 97 70 60 69\n\nNB : Avoir un permis de conduire est un plus\n\nWashMan, parce que vous meritez le meilleur.\n\nContact : 0152525233\n\nSuivez-nous sur nos reseaux sociaux :",
+    contentEN: "Recruitment Notice\n\nA laundry located in Calavi near Arconville is looking for an agent who can read and write correctly and has good knowledge of 4-stroke engines.\n\nInterested candidates are invited to submit their CV along with a handwritten cover letter at the NDC office located on the street of the Calavi town hall.\n\nContact: +22901 97 70 60 69\n\nNote: Having a driver's license is a plus\n\nWashMan, because you deserve the best.\n\nContact: 0152525233\n\nFollow us on social media:",
+    date: "2026-03-10",
+    category: "Recrutement",
+    hasSocialLinks: true,
+    hasPhoneLink: "+2290152525233"
   }
 ];
 
