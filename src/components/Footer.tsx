@@ -54,7 +54,7 @@ const Footer = () => {
                   <FaFacebookF className="h-5 w-5" />
                 </Button>
               </a>
-              <a href="https://linkedin.com/company/ndcconseils" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/ndc-conseils-benin-401426390/" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
                   <FaLinkedinIn className="h-5 w-5" />
                 </Button>
