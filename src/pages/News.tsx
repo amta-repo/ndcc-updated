@@ -6,6 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 
+import { FaInstagram, FaFacebook, FaTiktok, FaPhone } from "react-icons/fa6";
 import ingco1 from "@/assets/ingco-ndcc1.jpeg";
 import ingco2 from "@/assets/ingco-ndcc2.jpeg";
 import ingco3 from "@/assets/ingco-ndcc3.jpeg";
@@ -16,6 +17,8 @@ import house3 from "@/assets/house3.jpeg";
 import house4 from "@/assets/house4.jpeg";
 import house5 from "@/assets/house5.jpeg";
 import house6 from "@/assets/house6.jpeg";
+import pressingMobile from "@/assets/pressing-mobile-formation.jpeg";
+import avisRecrutement from "@/assets/avis-recrutement.jpeg";
 
 interface NewsItem {
   id: number;
