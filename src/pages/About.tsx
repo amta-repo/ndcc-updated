@@ -44,6 +44,11 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <SeoHelmet
+        title="À Propos - Profil du Cabinet"
+        description="Découvrez NDC CONSEILS, cabinet d'expertise fiscale et juridique au Bénin. Notre équipe, notre mission et nos valeurs au service de votre succès."
+        canonical="https://ndcconseils.com/about"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4">

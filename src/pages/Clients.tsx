@@ -76,6 +76,11 @@ const Clients = () => {
 
   return (
     <div className="min-h-screen py-16">
+      <SeoHelmet
+        title="Clients & Partenaires"
+        description="Découvrez les entreprises et organisations qui font confiance à NDC CONSEILS pour leurs besoins fiscaux, juridiques et comptables au Bénin."
+        canonical="https://ndcconseils.com/clients"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">

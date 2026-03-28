@@ -83,6 +83,11 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen py-16">
+      <SeoHelmet
+        title="Galerie - Photos et Événements"
+        description="Découvrez en images l'équipe NDC CONSEILS, nos événements, formations et réalisations au Bénin."
+        canonical="https://ndcconseils.com/gallery"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
