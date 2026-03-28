@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
+import SeoHelmet from "@/components/SeoHelmet";
 import { 
   Calculator, 
   Scale, 

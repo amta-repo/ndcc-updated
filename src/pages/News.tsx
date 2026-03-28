@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
+import SeoHelmet from "@/components/SeoHelmet";
 
 import { FaInstagram, FaFacebook, FaTiktok, FaPhone } from "react-icons/fa6";
 import ingco1 from "@/assets/ingco-ndcc1.jpeg";

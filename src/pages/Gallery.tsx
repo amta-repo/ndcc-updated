@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ZoomIn, Download } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
+import SeoHelmet from "@/components/SeoHelmet";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import galleryImage1 from "@/assets/gallery-1.jpeg";

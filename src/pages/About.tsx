@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Award, Users, Target, Heart, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/hooks/useTranslation";
+import SeoHelmet from "@/components/SeoHelmet";
 import ndccMission from "@/assets/ndcc-mission.jpg";
 import ceoPhoto from "@/assets/directeur-executif.jpeg";
 
