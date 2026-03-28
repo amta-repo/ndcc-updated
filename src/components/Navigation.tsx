@@ -76,7 +76,7 @@ const Navigation = () => {
                 className={`font-medium transition-colors duration-200 ${
                   isActive(item.href)
                     ? "text-accent border-b-2 border-accent"
-                    : "text-primary-foreground hover:text-accent"
+                    : "text-foreground hover:text-accent"
                 }`}
               >
                 {item.label}
