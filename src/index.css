@@ -9,54 +9,58 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 0 0% 100%;
-    --foreground: 203 82% 18%; /* Navy Blue #0B3C5D */
+    /* Core Brand Colors - Refined Palette */
+    --background: 30 7% 95%; /* #F2F0EF */
+    --foreground: 210 60% 15%; /* Dark Navy Blue */
 
-    --card: 0 0% 100%;
-    --card-foreground: 203 82% 18%;
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 210 60% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 203 82% 18%;
+    --popover-foreground: 210 60% 15%;
 
-    /* Primary - Navy Blue (Trust & Authority) */
-    --primary: 203 82% 18%; /* #0B3C5D */
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 203 50% 35%;
-    --primary-dark: 203 90% 12%;
+    /* Primary - Dark Navy Blue (Trust & Authority) */
+    --primary: 210 60% 15%;
+    --primary-foreground: 30 7% 95%;
+    --primary-light: 210 30% 35%;
+    --primary-dark: 210 70% 10%;
 
-    /* Secondary - Emerald Green (Growth & Success) */
-    --secondary: 159 56% 39%; /* #2C9C6F */
+    /* Secondary - Warm Taupe (Elegance) #AB978C */
+    --secondary: 18 16% 61%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 159 40% 55%;
-    --secondary-dark: 159 70% 25%;
+    --secondary-light: 18 16% 75%;
+    --secondary-dark: 18 20% 45%;
 
-    /* Accent - Elegant Gold (Prestige & Premium) */
+    /* Accent - Soft Gold (Prestige & Premium) */
     --accent: 45 74% 53%; /* #D4AF37 */
-    --accent-foreground: 203 82% 18%;
+    --accent-foreground: 210 60% 15%;
     --accent-light: 45 60% 70%;
     --accent-dark: 45 80% 40%;
 
-    /* Neutral Grays (Modern & Clean) */
-    --muted: 0 0% 96.1%; /* #F5F5F5 */
-    --muted-foreground: 203 15% 40%;
-    --muted-dark: 0 0% 90%; /* #E6E6E6 */
+    /* Neutral - Cool & Warm Grays */
+    --muted: 340 5% 91%; /* #E9E6E7 */
+    --muted-foreground: 222 6% 51%; /* #7B7F8A */
+    --muted-dark: 200 12% 86%; /* #D4DDE2 */
 
-    --border: 203 20% 88%;
-    --input: 203 20% 92%;
+    /* Navigation - Off White */
+    --nav: 30 7% 95%; /* #F2F0EF */
+    --nav-foreground: 210 60% 15%;
+
+    --border: 200 12% 86%;
+    --input: 200 12% 90%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     /* Professional Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
     --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
     --gradient-accent: linear-gradient(45deg, hsl(var(--accent)), hsl(var(--accent-light)));
 
     /* Professional Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.15);
-    --shadow-card: 0 4px 15px -3px hsl(var(--primary) / 0.1);
-    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.12);
+    --shadow-card: 0 4px 15px -3px hsl(var(--primary) / 0.08);
+    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.2);
 
     /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
