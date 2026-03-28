@@ -49,25 +49,17 @@ const Footer = () => {
               d'audit-fiscale, juridique et comptable.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/people/New-Deal-Consulting-Conseils/100054363888577/" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
-                  <FaFacebookF className="h-5 w-5" />
-                </Button>
+              <a href="https://www.facebook.com/people/New-Deal-Consulting-Conseils/100054363888577/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-10 w-10 rounded-md text-primary-foreground hover:text-accent transition-colors">
+                <FaFacebookF className="h-5 w-5" />
               </a>
-              <a href="https://www.linkedin.com/in/new-deals-consulting-conseils-benin-401426390" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
-                  <FaLinkedinIn className="h-5 w-5" />
-                </Button>
+              <a href="https://www.linkedin.com/in/new-deals-consulting-conseils-benin-401426390" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-10 w-10 rounded-md text-primary-foreground hover:text-accent transition-colors">
+                <FaLinkedinIn className="h-5 w-5" />
               </a>
-              <a href="https://x.com/ndcconseils" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
-                  <FaTwitter className="h-5 w-5" />
-                </Button>
+              <a href="https://x.com/ndcconseils" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-10 w-10 rounded-md text-primary-foreground hover:text-accent transition-colors">
+                <FaTwitter className="h-5 w-5" />
               </a>
-              <a href="https://www.instagram.com/ndcconseils" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-accent">
-                  <FaInstagram className="h-5 w-5" />
-                </Button>
+              <a href="https://www.instagram.com/ndcconseils" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-10 w-10 rounded-md text-primary-foreground hover:text-accent transition-colors">
+                <FaInstagram className="h-5 w-5" />
               </a>
             </div>
           </div>
