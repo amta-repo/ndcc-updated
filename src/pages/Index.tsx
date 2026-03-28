@@ -24,7 +24,7 @@ import teamPhoto from "@/assets/Équipe  NDCC - Copy1.jpeg";
 import TestimonialsSection from "@/components/TestimonialsSection";
 
 const Index = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const services = [
     {
       id: "conseil-fiscal",
