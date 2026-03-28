@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import SeoHelmet from "@/components/SeoHelmet";
 import { 
   Phone, 
   Mail, 
@@ -86,6 +87,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen py-16">
+      <SeoHelmet
+        title="Contact - Nous Joindre"
+        description="Contactez NDC CONSEILS à Cotonou, Bénin. Téléphone: +229 01 97 70 60 69. Email: ndcconseils.contact@gmail.com. Consultation gratuite."
+        canonical="https://ndcconseils.com/contact"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">

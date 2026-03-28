@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import SeoHelmet from "@/components/SeoHelmet";
 import { 
   Building,
   Building2, 
@@ -75,6 +76,11 @@ const Clients = () => {
 
   return (
     <div className="min-h-screen py-16">
+      <SeoHelmet
+        title="Clients & Partenaires"
+        description="Découvrez les entreprises et organisations qui font confiance à NDC CONSEILS pour leurs besoins fiscaux, juridiques et comptables au Bénin."
+        canonical="https://ndcconseils.com/clients"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">

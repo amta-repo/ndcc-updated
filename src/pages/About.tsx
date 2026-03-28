@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Award, Users, Target, Heart, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/hooks/useTranslation";
+import SeoHelmet from "@/components/SeoHelmet";
 import ndccMission from "@/assets/ndcc-mission.jpg";
 import ceoPhoto from "@/assets/directeur-executif.jpeg";
 
@@ -43,6 +44,11 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <SeoHelmet
+        title="À Propos - Profil du Cabinet"
+        description="Découvrez NDC CONSEILS, cabinet d'expertise fiscale et juridique au Bénin. Notre équipe, notre mission et nos valeurs au service de votre succès."
+        canonical="https://ndcconseils.com/about"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4">

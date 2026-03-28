@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
+import SeoHelmet from "@/components/SeoHelmet";
 
 import { FaInstagram, FaFacebook, FaTiktok, FaPhone } from "react-icons/fa6";
 import ingco1 from "@/assets/ingco-ndcc1.jpeg";
@@ -171,6 +172,11 @@ const News = () => {
 
   return (
     <div className="min-h-screen py-16">
+      <SeoHelmet
+        title="Actualités - Infos et Publications"
+        description="Restez informé des dernières nouvelles, événements et publications de NDC CONSEILS au Bénin."
+        canonical="https://ndcconseils.com/news"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">

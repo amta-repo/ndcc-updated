@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useTranslation } from "@/hooks/useTranslation";
+import SeoHelmet from "@/components/SeoHelmet";
 import { 
   Calculator, 
   Scale, 
@@ -23,7 +24,7 @@ import teamPhoto from "@/assets/Équipe  NDCC - Copy1.jpeg";
 import TestimonialsSection from "@/components/TestimonialsSection";
 
 const Index = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const services = [
     {
       id: "conseil-fiscal",
@@ -101,6 +102,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <SeoHelmet
+        title={language === 'FR' ? "Accueil - Cabinet Conseil Fiscal & Juridique" : "Home - Tax & Legal Consulting Firm"}
+        description={language === 'FR' ? "NDC CONSEILS, cabinet d'expertise fiscale et juridique leader au Bénin. +15 ans d'expérience en conseil fiscal, juridique et comptable à Cotonou." : "NDC CONSEILS, leading tax and legal consulting firm in Benin. 15+ years of expertise in tax, legal and accounting services in Cotonou."}
+        canonical="https://ndcconseils.com/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center">
         <div className="absolute inset-0">

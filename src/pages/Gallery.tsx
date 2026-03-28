@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ZoomIn, Download } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
+import SeoHelmet from "@/components/SeoHelmet";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import galleryImage1 from "@/assets/gallery-1.jpeg";
@@ -82,6 +83,11 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen py-16">
+      <SeoHelmet
+        title="Galerie - Photos et Événements"
+        description="Découvrez en images l'équipe NDC CONSEILS, nos événements, formations et réalisations au Bénin."
+        canonical="https://ndcconseils.com/gallery"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">

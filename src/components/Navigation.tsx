@@ -24,9 +24,9 @@ const Navigation = () => {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <header className="bg-primary shadow-elegant sticky top-0 z-50">
+    <header className="bg-nav shadow-elegant sticky top-0 z-50 backdrop-blur-sm">
       {/* Top Bar */}
-      <div className="bg-primary-dark text-primary-foreground py-2">
+      <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-4">
@@ -46,7 +46,7 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={toggleLanguage}
-              className="text-primary-foreground hover:bg-primary/20"
+              className="text-primary-foreground hover:bg-primary-light/30"
             >
               <Globe className="h-4 w-4 mr-2" />
               {language}
@@ -76,7 +76,7 @@ const Navigation = () => {
                 className={`font-medium transition-colors duration-200 ${
                   isActive(item.href)
                     ? "text-accent border-b-2 border-accent"
-                    : "text-primary-foreground hover:text-accent"
+                    : "text-foreground hover:text-accent"
                 }`}
               >
                 {item.label}
@@ -92,7 +92,7 @@ const Navigation = () => {
           {/* Mobile Navigation */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="sm" className="text-primary-foreground">
+              <Button variant="ghost" size="sm" className="text-foreground">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>

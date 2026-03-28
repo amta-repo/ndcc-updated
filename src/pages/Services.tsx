@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
+import SeoHelmet from "@/components/SeoHelmet";
 import { 
   Calculator, 
   Scale, 
@@ -76,6 +77,11 @@ const Services = () => {
 
   return (
     <div className="min-h-screen py-16">
+      <SeoHelmet
+        title="Nos Services - Conseil Fiscal, Juridique & Comptable"
+        description="NDC CONSEILS offre des services professionnels en conseil fiscal, juridique, comptable, management, sécurisation foncière et gestion de projets au Bénin."
+        canonical="https://ndcconseils.com/services"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">

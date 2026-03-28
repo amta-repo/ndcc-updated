@@ -42,6 +42,10 @@ export default {
           foreground: "hsl(var(--muted-foreground))",
           dark: "hsl(var(--muted-dark))",
         },
+        nav: {
+          DEFAULT: "hsl(var(--nav))",
+          foreground: "hsl(var(--nav-foreground))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
